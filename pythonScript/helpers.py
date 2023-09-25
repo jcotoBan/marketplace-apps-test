@@ -104,7 +104,7 @@ def print_ansible_errors(host):
        client.close()
 
     if output:
-        print(f"{mcolors.FAIL}>>>>>>>>>>>>ansible errors{mcolors.ENDC}\n", end='')
+        print(f"{mcolors.FAIL}Ansible tasks with errors{mcolors.ENDC}\n", end='')
         print(*output)
         print('\n')
 

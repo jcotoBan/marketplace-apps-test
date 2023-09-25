@@ -27,11 +27,11 @@ output=curl_wordpress_rdns_domain(lapi, region, email, "4dsf*asdf4as*").json()
 host = output.get('ipv4', [])[0]
 id = output.get('id', None)
 
-print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Ansible Playbook Verification\n{mcolors.ENDC}", end='')
+print(f"{mcolors.OKBLUE}Ansible Playbook Verification\n{mcolors.ENDC}", end='')
 ssh_validator(host)
 ansible_process_validator(host)
 
-print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Ansible Recaps{mcolors.ENDC}\n", end='')
+print(f"{mcolors.OKBLUE}Ansible Recaps{mcolors.ENDC}\n", end='')
 print_ansible_recap(host)
 print_ansible_errors(host)
 
@@ -43,11 +43,11 @@ output=curl_wordpress_custom_domain(lapi, region, email, "4dsf*asdf4as*").json()
 host = output.get('ipv4', [])[0]
 id = output.get('id', None)
 
-print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Ansible Playbook Verification\n{mcolors.ENDC}", end='')
+print(f"{mcolors.OKBLUE}Ansible Playbook Verification\n{mcolors.ENDC}", end='')
 ssh_validator(host)
 ansible_process_validator(host)
 
-print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Ansible Recaps{mcolors.ENDC}\n", end='')
+print(f"{mcolors.OKBLUE}Ansible Recaps{mcolors.ENDC}\n", end='')
 print_ansible_recap(host)
 print_ansible_errors(host)
 
@@ -60,11 +60,11 @@ output=curl_nomad(lapi, region, email, "4dsf*asdf4as*").json()
 host = output.get('ipv4', [])[0]
 id = output.get('id', None)
 
-print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Ansible Playbook Verification\n{mcolors.ENDC}", end='')
+print(f"{mcolors.OKBLUE}Ansible Playbook Verification\n{mcolors.ENDC}", end='')
 ssh_validator(host)
 ansible_process_validator(host)
 
-print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Ansible Recaps{mcolors.ENDC}\n", end='')
+print(f"{mcolors.OKBLUE}Ansible Recaps{mcolors.ENDC}\n", end='')
 print_ansible_recap(host)
 print_ansible_errors(host)
 

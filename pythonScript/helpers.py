@@ -179,7 +179,7 @@ def curl_wordpress_custom_domain(token, region, email, root_pass):
             "password": root_pass,
             "pubkey": "",
             "domain": "jccsutils.net", 
-            "token_password": lapi,
+            "token_password": token,
             "subdomain": "www",
         },
         "stackscript_id": 401697,
@@ -200,7 +200,6 @@ def curl_nomad(token, region, email, root_pass):
    
     api_url = "https://api.linode.com/v4/linode/instances"
 
-    # Define the request payload
     payload = {
         "authorized_users": ["jucot"],
         "backups_enabled": False,
@@ -216,7 +215,7 @@ def curl_nomad(token, region, email, root_pass):
             "cluster_size": "6",
             "servers": "3",
             "clients": "3",
-            "token_password": lapi,
+            "token_password": token,
             "sudo_username": "test_sudo",
             "email_address": "email"
         },
@@ -267,7 +266,7 @@ def create_key_cloudman(token,sshkey):
 def delete_key_cloudman(token,sshkey_id):
    
     url = f"https://api.linode.com/v4/profile/sshkeys/{sshkey_id}"
-    
+
     response = requests.delete(url, auth=BearerAuth(token))
 
     if response.status_code == 200:
@@ -275,3 +274,30 @@ def delete_key_cloudman(token,sshkey_id):
     else:
         print(f"Failed to delete SSH key. Status code: {response.status_code}")
         print(response.text)
+
+def delete_instance(token, instance_id):
+
+    url = f"https://api.linode.com/v4/linode/instances/{instance_id}"
+    response = requests.delete(url, auth=BearerAuth(token))
+
+    if response.status_code == 200:
+        print(f"Linode {instance_id} deleted successfully from cloud manager.")
+    else:
+        print(f"Failed to delete Linode. Status code: {response.status_code}")
+        print(response.text)
+
+def delete_nomad_cluster_instance(token):
+    linodes=''
+    url = "https://api.linode.com/v4/linode/instances"
+    response = requests.get(url, auth=BearerAuth(token))
+    
+    if response.status_code == 200:
+        linodes=response.json()
+    else:
+        print(f"Failed to get linodes. Status code: {response.status_code}")
+        print(response.json())
+        
+    filtered_objects = [obj for obj in linodes['data'] if 'nomad_custom_test' in obj['label']]
+
+    for obj in filtered_objects:
+        delete_instance(token,obj['id'])

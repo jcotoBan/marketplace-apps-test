@@ -35,6 +35,8 @@ print(f"{mcolors.OKBLUE}Ansible Recaps{mcolors.ENDC}\n", end='')
 print_ansible_recap(host)
 print_ansible_errors(host)
 
+delete_instance(token,id)
+
 #wordpress custom_domain
 
 print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Wordpress custom domain <<<<<<<<<<<<\n{mcolors.ENDC}", end='')
@@ -51,6 +53,7 @@ print(f"{mcolors.OKBLUE}Ansible Recaps{mcolors.ENDC}\n", end='')
 print_ansible_recap(host)
 print_ansible_errors(host)
 
+delete_instance(token,id)
 
 #nomad test
 
@@ -58,7 +61,6 @@ print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Nomad custom domain <<<<<<<<<<<<\n{mcolors.
 
 output=curl_nomad(token, region, email, "4dsf*asdf4as*").json()
 host = output.get('ipv4', [])[0]
-id = output.get('id', None)
 
 print(f"{mcolors.OKBLUE}Ansible Playbook Verification\n{mcolors.ENDC}", end='')
 ssh_validator(host)
@@ -69,3 +71,4 @@ print_ansible_recap(host)
 print_ansible_errors(host)
 
 delete_key_cloudman(lapi, key_id)
+delete_nomad_cluster_instance(token)

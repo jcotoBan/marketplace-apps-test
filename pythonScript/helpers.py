@@ -115,12 +115,12 @@ def print_ansible_errors(host):
         print(*output)
         print('\n')
 
-def curl_wordpress_rdns_domain(token, region, email, root_pass):
+def curl_wordpress_rdns_domain(token, region, email, root_pass, authorized_user):
    
     api_url = "https://api.linode.com/v4/linode/instances"
 
     payload = {
-        "authorized_users": ["jucot"],
+        "authorized_users": [authorized_user],
         "backups_enabled": False,
         "booted": True,
         "image": "linode/ubuntu22.04",
@@ -154,12 +154,12 @@ def curl_wordpress_rdns_domain(token, region, email, root_pass):
         print(f"{mcolors.FAIL}Failed to deploy instance. {response.json()} {mcolors.ENDC}")
         sys.exit()
 
-def curl_wordpress_custom_domain(token, region, email, root_pass):
+def curl_wordpress_custom_domain(token, region, email, root_pass, authorized_user):
    
     api_url = "https://api.linode.com/v4/linode/instances"
 
     payload = {
-        "authorized_users": ["jucot"],
+        "authorized_users": [authorized_user],
         "backups_enabled": False,
         "booted": True,
         "image": "linode/ubuntu22.04",
@@ -196,12 +196,12 @@ def curl_wordpress_custom_domain(token, region, email, root_pass):
         print(f"{mcolors.FAIL}Failed to deploy instance. {response.json()} {mcolors.ENDC}")
         sys.exit()
 
-def curl_nomad(token, region, email, root_pass):
+def curl_nomad(token, region, email, root_pass, authorized_user):
    
     api_url = "https://api.linode.com/v4/linode/instances"
 
     payload = {
-        "authorized_users": ["jucot"],
+        "authorized_users": [authorized_user],
         "backups_enabled": False,
         "booted": True,
         "image": "linode/ubuntu22.04",
@@ -306,7 +306,7 @@ def delete_nomad_cluster_instance(token):
 def delete_custom_domain(token):
 
     domains=''
-    urlget = "https://api.linode.com/v4/linode/instances"
+    urlget = "https://api.linode.com/v4/domains"
     response = requests.get(urlget, auth=BearerAuth(token))
     
     if response.status_code == 200:

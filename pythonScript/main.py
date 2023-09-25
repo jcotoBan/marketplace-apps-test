@@ -13,6 +13,12 @@ region = input()
 print(f"{mcolors.OKBLUE}Enter an email address for the notifications and SOA of domain: {mcolors.ENDC}", end='')
 email = input()
 
+print(f"{mcolors.OKBLUE}Authorized user for ssh_keys : {mcolors.ENDC}", end='')
+authorized_user = input()
+
+root_pass="4dsf*asdf4as*"
+
+
 os.system('clear')
 
 #Creating and uploading temp key for testing
@@ -23,7 +29,7 @@ key_id=create_key_cloudman(token, create_sshkeypair()).json().get('id', None)
 
 print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Wordpress rdns domain <<<<<<<<<<<<\n{mcolors.ENDC}", end='')
 
-output=curl_wordpress_rdns_domain(token, region, email, "4dsf*asdf4as*").json()
+output=curl_wordpress_rdns_domain(token, region, email, root_pass, authorized_user).json()
 host = output.get('ipv4', [])[0]
 id = output.get('id', None)
 
@@ -41,7 +47,7 @@ delete_instance(token,id)
 
 print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Wordpress custom domain <<<<<<<<<<<<\n{mcolors.ENDC}", end='')
 
-output=curl_wordpress_custom_domain(token, region, email, "4dsf*asdf4as*").json()
+output=curl_wordpress_custom_domain(token, region, email, root_pass, authorized_user).json()
 host = output.get('ipv4', [])[0]
 id = output.get('id', None)
 
@@ -59,7 +65,7 @@ delete_instance(token,id)
 
 print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Nomad custom domain <<<<<<<<<<<<\n{mcolors.ENDC}", end='')
 
-output=curl_nomad(token, region, email, "4dsf*asdf4as*").json()
+output=curl_nomad(token, region, email, root_pass, authorized_user).json()
 host = output.get('ipv4', [])[0]
 
 print(f"{mcolors.OKBLUE}Ansible Playbook Verification\n{mcolors.ENDC}", end='')

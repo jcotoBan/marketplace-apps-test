@@ -10,6 +10,13 @@ from Crypto.PublicKey import RSA
 
 spinner = Halo(spinner='dots', text_color='cyan')
 
+class BearerAuth(requests.auth.AuthBase):
+    def __init__(self, token):
+        self.token = token
+    def __call__(self, r):
+        r.headers["authorization"] = "Bearer " + self.token
+        return r
+
 class mcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -108,16 +115,10 @@ def print_ansible_errors(host):
         print(*output)
         print('\n')
 
-def curl_wordpress_rdns_domain(lapi, region, email, root_pass):
+def curl_wordpress_rdns_domain(token, region, email, root_pass):
    
     api_url = "https://api.linode.com/v4/linode/instances"
 
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {lapi}"
-    }
-
-    # Define the request payload
     payload = {
         "authorized_users": ["jucot"],
         "backups_enabled": False,
@@ -144,7 +145,7 @@ def curl_wordpress_rdns_domain(lapi, region, email, root_pass):
         "type": "g6-standard-4"
     }
 
-    response = requests.post(api_url, json=payload, headers=headers)
+    response = requests.post(api_url, json=payload, auth=BearerAuth(token))
 
     if response.status_code == 200:
         print("Linode instance created successfully.\n\n")
@@ -153,16 +154,10 @@ def curl_wordpress_rdns_domain(lapi, region, email, root_pass):
         print(f"{mcolors.FAIL}Failed to deploy instance. {response.json()} {mcolors.ENDC}")
         sys.exit()
 
-def curl_wordpress_custom_domain(lapi, region, email, root_pass):
+def curl_wordpress_custom_domain(token, region, email, root_pass):
    
     api_url = "https://api.linode.com/v4/linode/instances"
 
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {lapi}"
-    }
-
-    # Define the request payload
     payload = {
         "authorized_users": ["jucot"],
         "backups_enabled": False,
@@ -192,7 +187,7 @@ def curl_wordpress_custom_domain(lapi, region, email, root_pass):
         "type": "g6-standard-4"
     }
 
-    response = requests.post(api_url, json=payload, headers=headers)
+    response = requests.post(api_url, json=payload, auth=BearerAuth(token))
 
     if response.status_code == 200:
         print("Linode instance created successfully.\n\n")
@@ -201,14 +196,9 @@ def curl_wordpress_custom_domain(lapi, region, email, root_pass):
         print(f"{mcolors.FAIL}Failed to deploy instance. {response.json()} {mcolors.ENDC}")
         sys.exit()
 
-def curl_nomad(lapi, region, email, root_pass):
+def curl_nomad(token, region, email, root_pass):
    
     api_url = "https://api.linode.com/v4/linode/instances"
-
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {lapi}"
-    }
 
     # Define the request payload
     payload = {
@@ -235,7 +225,7 @@ def curl_nomad(lapi, region, email, root_pass):
         "type": "g6-standard-4"
     }
 
-    response = requests.post(api_url, json=payload, headers=headers)
+    response = requests.post(api_url, json=payload, auth=BearerAuth(token))
 
     if response.status_code == 200:
         print("Linode instance created successfully.\n\n")
@@ -256,22 +246,16 @@ def create_sshkeypair():
     f.close()
     return pubkey.exportKey('OpenSSH').decode()
    
-def create_key_cloudman(lapi,sshkey): 
+def create_key_cloudman(token,sshkey): 
 
     api_url = "https://api.linode.com/v4/profile/sshkeys"
 
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {lapi}"
-    }
-
-    # Define the request payload
     payload = {
         "label": "tmpkey",
         "ssh_key": sshkey
     }
 
-    response = requests.post(api_url, json=payload, headers=headers)
+    response = requests.post(api_url, json=payload, auth=BearerAuth(token))
 
     if response.status_code == 200:
         print("Temporary keys have been added to your Linode Account.\n\n")
@@ -280,12 +264,11 @@ def create_key_cloudman(lapi,sshkey):
         print(f"{mcolors.FAIL}Failed to generate keys. {response.json()} {mcolors.ENDC}")
         sys.exit()
 
-def delete_key_cloudman(lapi,sshkey_id):
-    TOKEN = "your_api_token_here"
+def delete_key_cloudman(token,sshkey_id):
+   
     url = f"https://api.linode.com/v4/profile/sshkeys/{sshkey_id}"
-    headers = {  "Authorization": f"Bearer {lapi}" }
-
-    response = requests.delete(url, headers=headers)
+    
+    response = requests.delete(url, auth=BearerAuth(token))
 
     if response.status_code == 200:
         print("SSH key deleted successfully from cloud manager.")

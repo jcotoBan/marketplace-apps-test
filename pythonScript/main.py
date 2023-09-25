@@ -4,7 +4,7 @@ import os
 from helpers import *
 
 print(f"\n{mcolors.OKBLUE}Enter your Linode API token: {mcolors.ENDC}", end='')
-lapi = input()
+token = input()
 
 display_regions()
 print(f"{mcolors.OKBLUE}Enter the region id region where you will run the tests: {mcolors.ENDC}", end='')
@@ -17,13 +17,13 @@ os.system('clear')
 
 #Creating and uploading temp key for testing
 
-key_id=create_key_cloudman(lapi, create_sshkeypair()).json().get('id', None)
+key_id=create_key_cloudman(token, create_sshkeypair()).json().get('id', None)
 
 #wordpress rnds_domain
 
 print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Wordpress rdns domain <<<<<<<<<<<<\n{mcolors.ENDC}", end='')
 
-output=curl_wordpress_rdns_domain(lapi, region, email, "4dsf*asdf4as*").json()
+output=curl_wordpress_rdns_domain(token, region, email, "4dsf*asdf4as*").json()
 host = output.get('ipv4', [])[0]
 id = output.get('id', None)
 
@@ -39,7 +39,7 @@ print_ansible_errors(host)
 
 print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Wordpress custom domain <<<<<<<<<<<<\n{mcolors.ENDC}", end='')
 
-output=curl_wordpress_custom_domain(lapi, region, email, "4dsf*asdf4as*").json()
+output=curl_wordpress_custom_domain(token, region, email, "4dsf*asdf4as*").json()
 host = output.get('ipv4', [])[0]
 id = output.get('id', None)
 
@@ -56,7 +56,7 @@ print_ansible_errors(host)
 
 print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Nomad custom domain <<<<<<<<<<<<\n{mcolors.ENDC}", end='')
 
-output=curl_nomad(lapi, region, email, "4dsf*asdf4as*").json()
+output=curl_nomad(token, region, email, "4dsf*asdf4as*").json()
 host = output.get('ipv4', [])[0]
 id = output.get('id', None)
 

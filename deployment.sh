@@ -2,7 +2,7 @@
 
 # git repo
 export GIT_REPO="https://github.com/jcotoBan/marketplace-apps-test.git"
-export WORK_DIR="/tmp/marketplace-apps-test/pythonScript" 
+export WORK_DIR="/tmp/marketplace-apps-test" 
 
 # install dependancies
 export DEBIAN_FRONTEND=noninteractive
@@ -18,9 +18,9 @@ pip3 install virtualenv
 python3 -m virtualenv env
 source env/bin/activate
 pip install pip --upgrade --quiet
-pip install -r requirements.txt --quiet
+pip install -r pythonScript/requirements.txt --quiet
 clear
-python3 main.py
+python3 pythonScript/main.py
 
 
 if [ -d "${WORK_DIR}" ]; then

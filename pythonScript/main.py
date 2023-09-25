@@ -72,3 +72,4 @@ print_ansible_errors(host)
 
 delete_nomad_cluster_instance(token)
 delete_key_cloudman(token, key_id)
+delete_custom_domain(token)

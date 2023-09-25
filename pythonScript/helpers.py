@@ -322,7 +322,7 @@ def delete_custom_domain(token):
     response = requests.delete(urldelete, auth=BearerAuth(token))
         
     if response.status_code == 200:
-        print(f"Domain {instance_id} successfully deleted  from cloud manager.")
+        print("Custom domain successfully deleted  from cloud manager.")
     else:
         print(f"Failed to delete Domain. Status code: {response.status_code}")
         print(response.json())

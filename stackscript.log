@@ -1,0 +1,1649 @@
+Get:1 http://mirrors.linode.com/ubuntu jammy InRelease
+Get:2 http://mirrors.linode.com/ubuntu jammy-updates InRelease
+Get:3 http://mirrors.linode.com/ubuntu jammy-backports InRelease
+Get:4 http://mirrors.linode.com/ubuntu jammy/main amd64 Packages [1395 kB]
+Get:5 http://mirrors.linode.com/ubuntu jammy/main Translation-en [510 kB]
+Get:6 http://mirrors.linode.com/ubuntu jammy/main amd64 c-n-f Metadata [30.3 kB]
+Get:7 http://mirrors.linode.com/ubuntu jammy/restricted amd64 Packages [129 kB]
+Get:8 http://mirrors.linode.com/ubuntu jammy/restricted Translation-en [18.6 kB]
+Get:9 http://mirrors.linode.com/ubuntu jammy/restricted amd64 c-n-f Metadata [488 B]
+Get:10 http://mirrors.linode.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:11 http://mirrors.linode.com/ubuntu jammy/universe Translation-en [5652 kB]
+Get:12 http://mirrors.linode.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]
+Get:13 http://mirrors.linode.com/ubuntu jammy/multiverse amd64 Packages [217 kB]
+Get:14 http://mirrors.linode.com/ubuntu jammy/multiverse Translation-en [112 kB]
+Get:15 http://mirrors.linode.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B]
+Get:16 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 Packages [1011 kB]
+Get:17 http://mirrors.linode.com/ubuntu jammy-updates/main Translation-en [227 kB]
+Get:18 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [15.6 kB]
+Get:19 http://mirrors.linode.com/ubuntu jammy-updates/restricted amd64 Packages [898 kB]
+Get:20 http://mirrors.linode.com/ubuntu jammy-updates/restricted Translation-en [145 kB]
+Get:21 http://mirrors.linode.com/ubuntu jammy-updates/restricted amd64 c-n-f Metadata [536 B]
+Get:22 http://mirrors.linode.com/ubuntu jammy-updates/universe amd64 Packages [984 kB]
+Get:23 http://mirrors.linode.com/ubuntu jammy-updates/universe Translation-en [215 kB]
+Get:24 http://mirrors.linode.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [21.8 kB]
+Get:25 http://mirrors.linode.com/ubuntu jammy-updates/multiverse amd64 Packages [41.6 kB]
+Get:26 http://mirrors.linode.com/ubuntu jammy-updates/multiverse Translation-en [9768 B]
+Get:27 http://mirrors.linode.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [476 B]
+Get:28 http://mirrors.linode.com/ubuntu jammy-backports/main amd64 Packages [41.7 kB]
+Get:29 http://mirrors.linode.com/ubuntu jammy-backports/main Translation-en [10.5 kB]
+Get:30 http://mirrors.linode.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Get:31 http://mirrors.linode.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:32 http://mirrors.linode.com/ubuntu jammy-backports/universe amd64 Packages [24.3 kB]
+Get:33 http://mirrors.linode.com/ubuntu jammy-backports/universe Translation-en [16.4 kB]
+Get:34 http://mirrors.linode.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [644 B]
+Get:35 http://mirrors.linode.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:36 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:37 https://ppa.launchpadcontent.net/akamai-ubuntu-launchpad/ppa/ubuntu jammy InRelease [18.1 kB]
+Get:38 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [802 kB]
+Get:39 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [169 kB]
+Get:40 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [11.3 kB]
+Get:41 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [882 kB]
+Get:42 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [142 kB]
+Get:43 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [536 B]
+Get:44 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [785 kB]
+Get:45 https://ppa.launchpadcontent.net/akamai-ubuntu-launchpad/ppa/ubuntu jammy/main amd64 Packages [696 B]
+Get:46 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [143 kB]
+Get:47 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16.7 kB]
+Get:48 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [36.5 kB]
+Get:49 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [7060 B]
+Get:50 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B]
+Get:51 https://ppa.launchpadcontent.net/akamai-ubuntu-launchpad/ppa/ubuntu jammy/main Translation-en [604 B]
+Fetched 29.7 MB in 3s (9022 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+git is already the newest version (1:2.34.1-1ubuntu1.10).
+python3 is already the newest version (3.10.6-1~22.04).
+The following additional packages will be installed:
+  build-essential cpp cpp-11 dpkg-dev fakeroot fontconfig-config
+  fonts-dejavu-core g++ g++-11 gcc gcc-11 gcc-11-base javascript-common
+  libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl
+  libasan6 libatomic1 libc-dev-bin libc-devtools libc6 libc6-dev libcc1-0
+  libcrypt-dev libdeflate0 libdpkg-perl libexpat1-dev libfakeroot
+  libfile-fcntllock-perl libfontconfig1 libgcc-11-dev libgd3 libgomp1 libisl23
+  libitm1 libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblsan0 libmpc3 libnsl-dev libpython3-dev
+  libpython3.10-dev libquadmath0 libstdc++-11-dev libtiff5 libtirpc-dev
+  libtsan0 libubsan1 libwebp7 libxpm4 linux-libc-dev lto-disabled-list make
+  manpages-dev python3-dev python3-wheel python3.10-dev rpcsvc-proto
+  zlib1g-dev
+Suggested packages:
+  cpp-doc gcc-11-locales debian-keyring g++-multilib g++-11-multilib
+  gcc-11-doc gcc-multilib autoconf automake libtool flex bison gdb gcc-doc
+  gcc-11-multilib apache2 | lighttpd | httpd glibc-doc bzr libgd-tools
+  libstdc++-11-doc make-doc
+The following NEW packages will be installed:
+  build-essential cpp cpp-11 dpkg-dev fakeroot fontconfig-config
+  fonts-dejavu-core g++ g++-11 gcc gcc-11 gcc-11-base javascript-common
+  libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl
+  libasan6 libatomic1 libc-dev-bin libc-devtools libc6-dev libcc1-0
+  libcrypt-dev libdeflate0 libdpkg-perl libexpat1-dev libfakeroot
+  libfile-fcntllock-perl libfontconfig1 libgcc-11-dev libgd3 libgomp1 libisl23
+  libitm1 libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblsan0 libmpc3 libnsl-dev libpython3-dev
+  libpython3.10-dev libquadmath0 libstdc++-11-dev libtiff5 libtirpc-dev
+  libtsan0 libubsan1 libwebp7 libxpm4 linux-libc-dev lto-disabled-list make
+  manpages-dev python3-dev python3-pip python3-wheel python3.10-dev
+  rpcsvc-proto zlib1g-dev
+The following packages will be upgraded:
+  libc6
+1 upgraded, 63 newly installed, 0 to remove and 26 not upgraded.
+Need to get 74.5 MB of archives.
+After this operation, 239 MB of additional disk space will be used.
+Get:1 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libc6 amd64 2.35-0ubuntu3.3 [3235 kB]
+Get:2 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libc-dev-bin amd64 2.35-0ubuntu3.3 [20.3 kB]
+Get:3 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 linux-libc-dev amd64 5.15.0-84.93 [1330 kB]
+Get:4 http://mirrors.linode.com/ubuntu jammy/main amd64 libcrypt-dev amd64 1:4.4.27-1 [112 kB]
+Get:5 http://mirrors.linode.com/ubuntu jammy/main amd64 rpcsvc-proto amd64 1.4.2-0ubuntu6 [68.5 kB]
+Get:6 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libtirpc-dev amd64 1.3.2-2ubuntu0.1 [192 kB]
+Get:7 http://mirrors.linode.com/ubuntu jammy/main amd64 libnsl-dev amd64 1.3.0-2build2 [71.3 kB]
+Get:8 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libc6-dev amd64 2.35-0ubuntu3.3 [2100 kB]
+Get:9 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 gcc-11-base amd64 11.4.0-1ubuntu1~22.04 [20.2 kB]
+Get:10 http://mirrors.linode.com/ubuntu jammy/main amd64 libisl23 amd64 0.24-2build1 [727 kB]
+Get:11 http://mirrors.linode.com/ubuntu jammy/main amd64 libmpc3 amd64 1.2.1-2build1 [46.9 kB]
+Get:12 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 cpp-11 amd64 11.4.0-1ubuntu1~22.04 [10.0 MB]
+Get:13 http://mirrors.linode.com/ubuntu jammy/main amd64 cpp amd64 4:11.2.0-1ubuntu1 [27.7 kB]
+Get:14 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libcc1-0 amd64 12.3.0-1ubuntu1~22.04 [48.3 kB]
+Get:15 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libgomp1 amd64 12.3.0-1ubuntu1~22.04 [126 kB]
+Get:16 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libitm1 amd64 12.3.0-1ubuntu1~22.04 [30.2 kB]
+Get:17 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libatomic1 amd64 12.3.0-1ubuntu1~22.04 [10.4 kB]
+Get:18 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libasan6 amd64 11.4.0-1ubuntu1~22.04 [2282 kB]
+Get:19 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 liblsan0 amd64 12.3.0-1ubuntu1~22.04 [1069 kB]
+Get:20 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libtsan0 amd64 11.4.0-1ubuntu1~22.04 [2260 kB]
+Get:21 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libubsan1 amd64 12.3.0-1ubuntu1~22.04 [976 kB]
+Get:22 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libquadmath0 amd64 12.3.0-1ubuntu1~22.04 [154 kB]
+Get:23 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libgcc-11-dev amd64 11.4.0-1ubuntu1~22.04 [2517 kB]
+Get:24 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 gcc-11 amd64 11.4.0-1ubuntu1~22.04 [20.1 MB]
+Get:25 http://mirrors.linode.com/ubuntu jammy/main amd64 gcc amd64 4:11.2.0-1ubuntu1 [5112 B]
+Get:26 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libstdc++-11-dev amd64 11.4.0-1ubuntu1~22.04 [2101 kB]
+Get:27 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 g++-11 amd64 11.4.0-1ubuntu1~22.04 [11.4 MB]
+Get:28 http://mirrors.linode.com/ubuntu jammy/main amd64 g++ amd64 4:11.2.0-1ubuntu1 [1412 B]
+Get:29 http://mirrors.linode.com/ubuntu jammy/main amd64 make amd64 4.3-4.1build1 [180 kB]
+Get:30 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libdpkg-perl all 1.21.1ubuntu2.2 [237 kB]
+Get:31 http://mirrors.linode.com/ubuntu jammy/main amd64 lto-disabled-list all 24 [12.5 kB]
+Get:32 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 dpkg-dev all 1.21.1ubuntu2.2 [922 kB]
+Get:33 http://mirrors.linode.com/ubuntu jammy/main amd64 build-essential amd64 12.9ubuntu3 [4744 B]
+Get:34 http://mirrors.linode.com/ubuntu jammy/main amd64 libfakeroot amd64 1.28-1ubuntu1 [31.5 kB]
+Get:35 http://mirrors.linode.com/ubuntu jammy/main amd64 fakeroot amd64 1.28-1ubuntu1 [60.4 kB]
+Get:36 http://mirrors.linode.com/ubuntu jammy/main amd64 fonts-dejavu-core all 2.37-2build1 [1041 kB]
+Get:37 http://mirrors.linode.com/ubuntu jammy/main amd64 fontconfig-config all 2.13.1-4.2ubuntu5 [29.1 kB]
+Get:38 http://mirrors.linode.com/ubuntu jammy/main amd64 javascript-common all 11+nmu1 [5936 B]
+Get:39 http://mirrors.linode.com/ubuntu jammy/main amd64 libalgorithm-diff-perl all 1.201-1 [41.8 kB]
+Get:40 http://mirrors.linode.com/ubuntu jammy/main amd64 libalgorithm-diff-xs-perl amd64 0.04-6build3 [11.9 kB]
+Get:41 http://mirrors.linode.com/ubuntu jammy/main amd64 libalgorithm-merge-perl all 0.08-3 [12.0 kB]
+Get:42 http://mirrors.linode.com/ubuntu jammy/main amd64 libfontconfig1 amd64 2.13.1-4.2ubuntu5 [131 kB]
+Get:43 http://mirrors.linode.com/ubuntu jammy/main amd64 libjpeg-turbo8 amd64 2.1.2-0ubuntu1 [134 kB]
+Get:44 http://mirrors.linode.com/ubuntu jammy/main amd64 libjpeg8 amd64 8c-2ubuntu10 [2264 B]
+Get:45 http://mirrors.linode.com/ubuntu jammy/main amd64 libdeflate0 amd64 1.10-2 [70.9 kB]
+Get:46 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libjbig0 amd64 2.1-3.1ubuntu0.22.04.1 [29.2 kB]
+Get:47 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libwebp7 amd64 1.2.2-2ubuntu0.22.04.2 [206 kB]
+Get:48 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libtiff5 amd64 4.3.0-6ubuntu0.5 [184 kB]
+Get:49 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libxpm4 amd64 1:3.5.12-1ubuntu0.22.04.1 [36.4 kB]
+Get:50 http://mirrors.linode.com/ubuntu jammy/main amd64 libgd3 amd64 2.3.0-2ubuntu2 [129 kB]
+Get:51 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libc-devtools amd64 2.35-0ubuntu3.3 [28.9 kB]
+Get:52 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libexpat1-dev amd64 2.4.7-1ubuntu0.2 [147 kB]
+Get:53 http://mirrors.linode.com/ubuntu jammy/main amd64 libfile-fcntllock-perl amd64 0.22-3build7 [33.9 kB]
+Get:54 http://mirrors.linode.com/ubuntu jammy/main amd64 libjs-jquery all 3.6.0+dfsg+~3.5.13-1 [321 kB]
+Get:55 http://mirrors.linode.com/ubuntu jammy/main amd64 libjs-underscore all 1.13.2~dfsg-2 [118 kB]
+Get:56 http://mirrors.linode.com/ubuntu jammy/main amd64 libjs-sphinxdoc all 4.3.2-1 [139 kB]
+Get:57 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2ubuntu9.2 [164 kB]
+Get:58 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libpython3.10-dev amd64 3.10.12-1~22.04.2 [4764 kB]
+Get:59 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 libpython3-dev amd64 3.10.6-1~22.04 [7166 B]
+Get:60 http://mirrors.linode.com/ubuntu jammy/main amd64 manpages-dev all 5.10-1ubuntu1 [2309 kB]
+Get:61 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 python3.10-dev amd64 3.10.12-1~22.04.2 [507 kB]
+Get:62 http://mirrors.linode.com/ubuntu jammy-updates/main amd64 python3-dev amd64 3.10.6-1~22.04 [26.0 kB]
+Get:63 http://mirrors.linode.com/ubuntu jammy-updates/universe amd64 python3-wheel all 0.37.1-2ubuntu0.22.04.1 [32.0 kB]
+Get:64 http://mirrors.linode.com/ubuntu jammy-updates/universe amd64 python3-pip all 22.0.2+dfsg-1ubuntu0.3 [1305 kB]
+dpkg-preconfigure: unable to re-open stdin: No such file or directory
+Fetched 74.5 MB in 1s (147 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 74310 files and directories currently installed.)
+Preparing to unpack .../libc6_2.35-0ubuntu3.3_amd64.deb ...
+Unpacking libc6:amd64 (2.35-0ubuntu3.3) over (2.35-0ubuntu3.1) ...
+Setting up libc6:amd64 (2.35-0ubuntu3.3) ...
+Selecting previously unselected package libc-dev-bin.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 74310 files and directories currently installed.)
+Preparing to unpack .../00-libc-dev-bin_2.35-0ubuntu3.3_amd64.deb ...
+Unpacking libc-dev-bin (2.35-0ubuntu3.3) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../01-linux-libc-dev_5.15.0-84.93_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (5.15.0-84.93) ...
+Selecting previously unselected package libcrypt-dev:amd64.
+Preparing to unpack .../02-libcrypt-dev_1%3a4.4.27-1_amd64.deb ...
+Unpacking libcrypt-dev:amd64 (1:4.4.27-1) ...
+Selecting previously unselected package rpcsvc-proto.
+Preparing to unpack .../03-rpcsvc-proto_1.4.2-0ubuntu6_amd64.deb ...
+Unpacking rpcsvc-proto (1.4.2-0ubuntu6) ...
+Selecting previously unselected package libtirpc-dev:amd64.
+Preparing to unpack .../04-libtirpc-dev_1.3.2-2ubuntu0.1_amd64.deb ...
+Unpacking libtirpc-dev:amd64 (1.3.2-2ubuntu0.1) ...
+Selecting previously unselected package libnsl-dev:amd64.
+Preparing to unpack .../05-libnsl-dev_1.3.0-2build2_amd64.deb ...
+Unpacking libnsl-dev:amd64 (1.3.0-2build2) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../06-libc6-dev_2.35-0ubuntu3.3_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.35-0ubuntu3.3) ...
+Selecting previously unselected package gcc-11-base:amd64.
+Preparing to unpack .../07-gcc-11-base_11.4.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking gcc-11-base:amd64 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libisl23:amd64.
+Preparing to unpack .../08-libisl23_0.24-2build1_amd64.deb ...
+Unpacking libisl23:amd64 (0.24-2build1) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../09-libmpc3_1.2.1-2build1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.2.1-2build1) ...
+Selecting previously unselected package cpp-11.
+Preparing to unpack .../10-cpp-11_11.4.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking cpp-11 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../11-cpp_4%3a11.2.0-1ubuntu1_amd64.deb ...
+Unpacking cpp (4:11.2.0-1ubuntu1) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../12-libcc1-0_12.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libcc1-0:amd64 (12.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../13-libgomp1_12.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libgomp1:amd64 (12.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../14-libitm1_12.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libitm1:amd64 (12.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../15-libatomic1_12.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libatomic1:amd64 (12.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libasan6:amd64.
+Preparing to unpack .../16-libasan6_11.4.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libasan6:amd64 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../17-liblsan0_12.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking liblsan0:amd64 (12.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../18-libtsan0_11.4.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libtsan0:amd64 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libubsan1:amd64.
+Preparing to unpack .../19-libubsan1_12.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libubsan1:amd64 (12.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../20-libquadmath0_12.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libquadmath0:amd64 (12.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libgcc-11-dev:amd64.
+Preparing to unpack .../21-libgcc-11-dev_11.4.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libgcc-11-dev:amd64 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package gcc-11.
+Preparing to unpack .../22-gcc-11_11.4.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking gcc-11 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../23-gcc_4%3a11.2.0-1ubuntu1_amd64.deb ...
+Unpacking gcc (4:11.2.0-1ubuntu1) ...
+Selecting previously unselected package libstdc++-11-dev:amd64.
+Preparing to unpack .../24-libstdc++-11-dev_11.4.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libstdc++-11-dev:amd64 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package g++-11.
+Preparing to unpack .../25-g++-11_11.4.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking g++-11 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../26-g++_4%3a11.2.0-1ubuntu1_amd64.deb ...
+Unpacking g++ (4:11.2.0-1ubuntu1) ...
+Selecting previously unselected package make.
+Preparing to unpack .../27-make_4.3-4.1build1_amd64.deb ...
+Unpacking make (4.3-4.1build1) ...
+Selecting previously unselected package libdpkg-perl.
+Preparing to unpack .../28-libdpkg-perl_1.21.1ubuntu2.2_all.deb ...
+Unpacking libdpkg-perl (1.21.1ubuntu2.2) ...
+Selecting previously unselected package lto-disabled-list.
+Preparing to unpack .../29-lto-disabled-list_24_all.deb ...
+Unpacking lto-disabled-list (24) ...
+Selecting previously unselected package dpkg-dev.
+Preparing to unpack .../30-dpkg-dev_1.21.1ubuntu2.2_all.deb ...
+Unpacking dpkg-dev (1.21.1ubuntu2.2) ...
+Selecting previously unselected package build-essential.
+Preparing to unpack .../31-build-essential_12.9ubuntu3_amd64.deb ...
+Unpacking build-essential (12.9ubuntu3) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../32-libfakeroot_1.28-1ubuntu1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.28-1ubuntu1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../33-fakeroot_1.28-1ubuntu1_amd64.deb ...
+Unpacking fakeroot (1.28-1ubuntu1) ...
+Selecting previously unselected package fonts-dejavu-core.
+Preparing to unpack .../34-fonts-dejavu-core_2.37-2build1_all.deb ...
+Unpacking fonts-dejavu-core (2.37-2build1) ...
+Selecting previously unselected package fontconfig-config.
+Preparing to unpack .../35-fontconfig-config_2.13.1-4.2ubuntu5_all.deb ...
+Unpacking fontconfig-config (2.13.1-4.2ubuntu5) ...
+Selecting previously unselected package javascript-common.
+Preparing to unpack .../36-javascript-common_11+nmu1_all.deb ...
+Unpacking javascript-common (11+nmu1) ...
+Selecting previously unselected package libalgorithm-diff-perl.
+Preparing to unpack .../37-libalgorithm-diff-perl_1.201-1_all.deb ...
+Unpacking libalgorithm-diff-perl (1.201-1) ...
+Selecting previously unselected package libalgorithm-diff-xs-perl.
+Preparing to unpack .../38-libalgorithm-diff-xs-perl_0.04-6build3_amd64.deb ...
+Unpacking libalgorithm-diff-xs-perl (0.04-6build3) ...
+Selecting previously unselected package libalgorithm-merge-perl.
+Preparing to unpack .../39-libalgorithm-merge-perl_0.08-3_all.deb ...
+Unpacking libalgorithm-merge-perl (0.08-3) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Preparing to unpack .../40-libfontconfig1_2.13.1-4.2ubuntu5_amd64.deb ...
+Unpacking libfontconfig1:amd64 (2.13.1-4.2ubuntu5) ...
+Selecting previously unselected package libjpeg-turbo8:amd64.
+Preparing to unpack .../41-libjpeg-turbo8_2.1.2-0ubuntu1_amd64.deb ...
+Unpacking libjpeg-turbo8:amd64 (2.1.2-0ubuntu1) ...
+Selecting previously unselected package libjpeg8:amd64.
+Preparing to unpack .../42-libjpeg8_8c-2ubuntu10_amd64.deb ...
+Unpacking libjpeg8:amd64 (8c-2ubuntu10) ...
+Selecting previously unselected package libdeflate0:amd64.
+Preparing to unpack .../43-libdeflate0_1.10-2_amd64.deb ...
+Unpacking libdeflate0:amd64 (1.10-2) ...
+Selecting previously unselected package libjbig0:amd64.
+Preparing to unpack .../44-libjbig0_2.1-3.1ubuntu0.22.04.1_amd64.deb ...
+Unpacking libjbig0:amd64 (2.1-3.1ubuntu0.22.04.1) ...
+Selecting previously unselected package libwebp7:amd64.
+Preparing to unpack .../45-libwebp7_1.2.2-2ubuntu0.22.04.2_amd64.deb ...
+Unpacking libwebp7:amd64 (1.2.2-2ubuntu0.22.04.2) ...
+Selecting previously unselected package libtiff5:amd64.
+Preparing to unpack .../46-libtiff5_4.3.0-6ubuntu0.5_amd64.deb ...
+Unpacking libtiff5:amd64 (4.3.0-6ubuntu0.5) ...
+Selecting previously unselected package libxpm4:amd64.
+Preparing to unpack .../47-libxpm4_1%3a3.5.12-1ubuntu0.22.04.1_amd64.deb ...
+Unpacking libxpm4:amd64 (1:3.5.12-1ubuntu0.22.04.1) ...
+Selecting previously unselected package libgd3:amd64.
+Preparing to unpack .../48-libgd3_2.3.0-2ubuntu2_amd64.deb ...
+Unpacking libgd3:amd64 (2.3.0-2ubuntu2) ...
+Selecting previously unselected package libc-devtools.
+Preparing to unpack .../49-libc-devtools_2.35-0ubuntu3.3_amd64.deb ...
+Unpacking libc-devtools (2.35-0ubuntu3.3) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../50-libexpat1-dev_2.4.7-1ubuntu0.2_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.4.7-1ubuntu0.2) ...
+Selecting previously unselected package libfile-fcntllock-perl.
+Preparing to unpack .../51-libfile-fcntllock-perl_0.22-3build7_amd64.deb ...
+Unpacking libfile-fcntllock-perl (0.22-3build7) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../52-libjs-jquery_3.6.0+dfsg+~3.5.13-1_all.deb ...
+Unpacking libjs-jquery (3.6.0+dfsg+~3.5.13-1) ...
+Selecting previously unselected package libjs-underscore.
+Preparing to unpack .../53-libjs-underscore_1.13.2~dfsg-2_all.deb ...
+Unpacking libjs-underscore (1.13.2~dfsg-2) ...
+Selecting previously unselected package libjs-sphinxdoc.
+Preparing to unpack .../54-libjs-sphinxdoc_4.3.2-1_all.deb ...
+Unpacking libjs-sphinxdoc (4.3.2-1) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../55-zlib1g-dev_1%3a1.2.11.dfsg-2ubuntu9.2_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu9.2) ...
+Selecting previously unselected package libpython3.10-dev:amd64.
+Preparing to unpack .../56-libpython3.10-dev_3.10.12-1~22.04.2_amd64.deb ...
+Unpacking libpython3.10-dev:amd64 (3.10.12-1~22.04.2) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../57-libpython3-dev_3.10.6-1~22.04_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.10.6-1~22.04) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../58-manpages-dev_5.10-1ubuntu1_all.deb ...
+Unpacking manpages-dev (5.10-1ubuntu1) ...
+Selecting previously unselected package python3.10-dev.
+Preparing to unpack .../59-python3.10-dev_3.10.12-1~22.04.2_amd64.deb ...
+Unpacking python3.10-dev (3.10.12-1~22.04.2) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../60-python3-dev_3.10.6-1~22.04_amd64.deb ...
+Unpacking python3-dev (3.10.6-1~22.04) ...
+Selecting previously unselected package python3-wheel.
+Preparing to unpack .../61-python3-wheel_0.37.1-2ubuntu0.22.04.1_all.deb ...
+Unpacking python3-wheel (0.37.1-2ubuntu0.22.04.1) ...
+Selecting previously unselected package python3-pip.
+Preparing to unpack .../62-python3-pip_22.0.2+dfsg-1ubuntu0.3_all.deb ...
+Unpacking python3-pip (22.0.2+dfsg-1ubuntu0.3) ...
+Setting up javascript-common (11+nmu1) ...
+Setting up gcc-11-base:amd64 (11.4.0-1ubuntu1~22.04) ...
+Setting up manpages-dev (5.10-1ubuntu1) ...
+Setting up lto-disabled-list (24) ...
+Setting up libxpm4:amd64 (1:3.5.12-1ubuntu0.22.04.1) ...
+Setting up libfile-fcntllock-perl (0.22-3build7) ...
+Setting up libalgorithm-diff-perl (1.201-1) ...
+Setting up libdeflate0:amd64 (1.10-2) ...
+Setting up linux-libc-dev:amd64 (5.15.0-84.93) ...
+Setting up libgomp1:amd64 (12.3.0-1ubuntu1~22.04) ...
+Setting up python3-wheel (0.37.1-2ubuntu0.22.04.1) ...
+Setting up libjbig0:amd64 (2.1-3.1ubuntu0.22.04.1) ...
+Setting up libfakeroot:amd64 (1.28-1ubuntu1) ...
+Setting up libasan6:amd64 (11.4.0-1ubuntu1~22.04) ...
+Setting up fakeroot (1.28-1ubuntu1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up libtirpc-dev:amd64 (1.3.2-2ubuntu0.1) ...
+Setting up rpcsvc-proto (1.4.2-0ubuntu6) ...
+Setting up make (4.3-4.1build1) ...
+Setting up libquadmath0:amd64 (12.3.0-1ubuntu1~22.04) ...
+Setting up libmpc3:amd64 (1.2.1-2build1) ...
+Setting up libatomic1:amd64 (12.3.0-1ubuntu1~22.04) ...
+Setting up fonts-dejavu-core (2.37-2build1) ...
+Setting up python3-pip (22.0.2+dfsg-1ubuntu0.3) ...
+Setting up libjpeg-turbo8:amd64 (2.1.2-0ubuntu1) ...
+Setting up libdpkg-perl (1.21.1ubuntu2.2) ...
+Setting up libwebp7:amd64 (1.2.2-2ubuntu0.22.04.2) ...
+Setting up libubsan1:amd64 (12.3.0-1ubuntu1~22.04) ...
+Setting up libnsl-dev:amd64 (1.3.0-2build2) ...
+Setting up libcrypt-dev:amd64 (1:4.4.27-1) ...
+Setting up libjs-jquery (3.6.0+dfsg+~3.5.13-1) ...
+Setting up libisl23:amd64 (0.24-2build1) ...
+Setting up libc-dev-bin (2.35-0ubuntu3.3) ...
+Setting up libalgorithm-diff-xs-perl (0.04-6build3) ...
+Setting up libcc1-0:amd64 (12.3.0-1ubuntu1~22.04) ...
+Setting up liblsan0:amd64 (12.3.0-1ubuntu1~22.04) ...
+Setting up libitm1:amd64 (12.3.0-1ubuntu1~22.04) ...
+Setting up libjs-underscore (1.13.2~dfsg-2) ...
+Setting up libalgorithm-merge-perl (0.08-3) ...
+Setting up libtsan0:amd64 (11.4.0-1ubuntu1~22.04) ...
+Setting up libjpeg8:amd64 (8c-2ubuntu10) ...
+Setting up cpp-11 (11.4.0-1ubuntu1~22.04) ...
+Setting up fontconfig-config (2.13.1-4.2ubuntu5) ...
+Setting up dpkg-dev (1.21.1ubuntu2.2) ...
+Setting up libjs-sphinxdoc (4.3.2-1) ...
+Setting up libgcc-11-dev:amd64 (11.4.0-1ubuntu1~22.04) ...
+Setting up gcc-11 (11.4.0-1ubuntu1~22.04) ...
+Setting up cpp (4:11.2.0-1ubuntu1) ...
+Setting up libc6-dev:amd64 (2.35-0ubuntu3.3) ...
+Setting up libtiff5:amd64 (4.3.0-6ubuntu0.5) ...
+Setting up libfontconfig1:amd64 (2.13.1-4.2ubuntu5) ...
+Setting up gcc (4:11.2.0-1ubuntu1) ...
+Setting up libexpat1-dev:amd64 (2.4.7-1ubuntu0.2) ...
+Setting up libgd3:amd64 (2.3.0-2ubuntu2) ...
+Setting up libstdc++-11-dev:amd64 (11.4.0-1ubuntu1~22.04) ...
+Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu9.2) ...
+Setting up libc-devtools (2.35-0ubuntu3.3) ...
+Setting up g++-11 (11.4.0-1ubuntu1~22.04) ...
+Setting up libpython3.10-dev:amd64 (3.10.12-1~22.04.2) ...
+Setting up python3.10-dev (3.10.12-1~22.04.2) ...
+Setting up g++ (4:11.2.0-1ubuntu1) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up build-essential (12.9ubuntu3) ...
+Setting up libpython3-dev:amd64 (3.10.6-1~22.04) ...
+Setting up python3-dev (3.10.6-1~22.04) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+
+Running kernel seems to be up-to-date.
+
+Services to be restarted:
+ systemctl restart cron.service
+ systemctl restart haveged.service
+ systemctl restart packagekit.service
+ systemctl restart polkit.service
+ systemctl restart rsyslog.service
+ systemctl restart serial-getty@ttyS0.service
+ systemctl restart ssh.service
+ systemctl restart systemd-journald.service
+ systemctl restart systemd-networkd.service
+ systemctl restart systemd-resolved.service
+ systemctl restart systemd-timedated.service
+ systemctl restart systemd-timesyncd.service
+ systemctl restart systemd-udevd.service
+
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart getty@tty1.service
+ systemctl restart networkd-dispatcher.service
+ systemctl restart systemd-logind.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Cloning into 'marketplace-apps'...
+Collecting virtualenv
+  Downloading virtualenv-20.24.5-py3-none-any.whl (3.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 48.6 MB/s eta 0:00:00
+Collecting distlib<1,>=0.3.7
+  Downloading distlib-0.3.7-py2.py3-none-any.whl (468 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 468.9/468.9 KB 107.9 MB/s eta 0:00:00
+Collecting platformdirs<4,>=3.9.1
+  Downloading platformdirs-3.10.0-py3-none-any.whl (17 kB)
+Collecting filelock<4,>=3.12.2
+  Downloading filelock-3.12.4-py3-none-any.whl (11 kB)
+Installing collected packages: distlib, platformdirs, filelock, virtualenv
+Successfully installed distlib-0.3.7 filelock-3.12.4 platformdirs-3.10.0 virtualenv-20.24.5
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+created virtual environment CPython3.10.12.final.0-64 in 271ms
+  creator CPython3Posix(dest=/tmp/marketplace-apps/apps/linode-marketplace-wordpress/env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/root/.local/share/virtualenv)
+    added seed packages: pip==23.2.1, setuptools==68.2.0, wheel==0.41.2
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+Requirement already satisfied: pip in ./env/lib/python3.10/site-packages (23.2.1)
+Collecting ansible==6.0.0 (from -r requirements.txt (line 1))
+  Downloading ansible-6.0.0-py3-none-any.whl (40.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.3/40.3 MB 57.3 MB/s eta 0:00:00
+Collecting PyMySQL==1.0.2 (from -r requirements.txt (line 2))
+  Downloading PyMySQL-1.0.2-py3-none-any.whl (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.8/43.8 kB 14.7 MB/s eta 0:00:00
+Collecting yamllint==1.32.0 (from -r requirements.txt (line 6))
+  Obtaining dependency information for yamllint==1.32.0 from https://files.pythonhosted.org/packages/96/b3/ce98068f7598adfdcb0883bacc1c503db151f8fd76affea4dd424418a0f9/yamllint-1.32.0-py3-none-any.whl.metadata
+  Downloading yamllint-1.32.0-py3-none-any.whl.metadata (4.2 kB)
+Collecting pyyaml==6.0.1 (from -r requirements.txt (line 7))
+  Obtaining dependency information for pyyaml==6.0.1 from https://files.pythonhosted.org/packages/29/61/bf33c6c85c55bc45a29eee3195848ff2d518d84735eb0e2d8cb42e0d285e/PyYAML-6.0.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading PyYAML-6.0.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+Collecting ansible-lint==6.0.1 (from -r requirements.txt (line 8))
+  Downloading ansible_lint-6.0.1-py3-none-any.whl (136 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 136.8/136.8 kB 54.6 MB/s eta 0:00:00
+Collecting flake8==3.9.2 (from -r requirements.txt (line 9))
+  Downloading flake8-3.9.2-py2.py3-none-any.whl (73 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.1/73.1 kB 28.5 MB/s eta 0:00:00
+Collecting linode_api4==5.5.0 (from -r requirements.txt (line 10))
+  Obtaining dependency information for linode_api4==5.5.0 from https://files.pythonhosted.org/packages/c1/2d/e4341a71c1b0480e6c8c59dbf887d99c71c948fd81009c11ed8badc3cf12/linode_api4-5.5.0-py3-none-any.whl.metadata
+  Downloading linode_api4-5.5.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting dnspython==2.2.1 (from -r requirements.txt (line 11))
+  Downloading dnspython-2.2.1-py3-none-any.whl (269 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 269.1/269.1 kB 86.2 MB/s eta 0:00:00
+Collecting polling==0.3.2 (from -r requirements.txt (line 12))
+  Downloading polling-0.3.2.tar.gz (5.2 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting ansible-specdoc==0.0.14 (from -r requirements.txt (line 13))
+  Obtaining dependency information for ansible-specdoc==0.0.14 from https://files.pythonhosted.org/packages/b4/71/de2dbeb02b56af635eebefa2d02563f1a81f19db9652a67fe016afee4146/ansible_specdoc-0.0.14-py3-none-any.whl.metadata
+  Downloading ansible_specdoc-0.0.14-py3-none-any.whl.metadata (5.2 kB)
+Collecting ansible-core~=2.13.0 (from ansible==6.0.0->-r requirements.txt (line 1))
+  Obtaining dependency information for ansible-core~=2.13.0 from https://files.pythonhosted.org/packages/5d/af/f5c700d17262aeb433cb67fbb7d630bbf35557082ef5a97d350551ab5973/ansible_core-2.13.12-py3-none-any.whl.metadata
+  Downloading ansible_core-2.13.12-py3-none-any.whl.metadata (6.9 kB)
+Collecting pathspec>=0.5.3 (from yamllint==1.32.0->-r requirements.txt (line 6))
+  Obtaining dependency information for pathspec>=0.5.3 from https://files.pythonhosted.org/packages/b4/2a/9b1be29146139ef459188f5e420a66e835dda921208db600b7037093891f/pathspec-0.11.2-py3-none-any.whl.metadata
+  Downloading pathspec-0.11.2-py3-none-any.whl.metadata (19 kB)
+Collecting ansible-compat>=2.0.2 (from ansible-lint==6.0.1->-r requirements.txt (line 8))
+  Obtaining dependency information for ansible-compat>=2.0.2 from https://files.pythonhosted.org/packages/05/27/5a6b7df9e15f705df81e19aa62eb4bd1589c9c88413e9c00cd4904b7580b/ansible_compat-4.1.10-py3-none-any.whl.metadata
+  Downloading ansible_compat-4.1.10-py3-none-any.whl.metadata (2.8 kB)
+Collecting enrich>=1.2.6 (from ansible-lint==6.0.1->-r requirements.txt (line 8))
+  Downloading enrich-1.2.7-py3-none-any.whl (8.7 kB)
+Collecting packaging (from ansible-lint==6.0.1->-r requirements.txt (line 8))
+  Downloading packaging-23.1-py3-none-any.whl (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.9/48.9 kB 20.8 MB/s eta 0:00:00
+Collecting rich>=9.5.1 (from ansible-lint==6.0.1->-r requirements.txt (line 8))
+  Obtaining dependency information for rich>=9.5.1 from https://files.pythonhosted.org/packages/c1/d1/23ba6235ed82883bb416f57179d1db2c05f3fb8e5d83c18660f9ab6f09c9/rich-13.5.3-py3-none-any.whl.metadata
+  Downloading rich-13.5.3-py3-none-any.whl.metadata (18 kB)
+Collecting ruamel.yaml<0.18,>=0.15.34 (from ansible-lint==6.0.1->-r requirements.txt (line 8))
+  Obtaining dependency information for ruamel.yaml<0.18,>=0.15.34 from https://files.pythonhosted.org/packages/d9/0e/2a05efa11ea33513fbdf4a2e2576fe94fd8fa5ad226dbb9c660886390974/ruamel.yaml-0.17.32-py3-none-any.whl.metadata
+  Downloading ruamel.yaml-0.17.32-py3-none-any.whl.metadata (17 kB)
+Collecting wcmatch>=7.0 (from ansible-lint==6.0.1->-r requirements.txt (line 8))
+  Obtaining dependency information for wcmatch>=7.0 from https://files.pythonhosted.org/packages/6d/45/563267247f0b6f7c0f8028ab92bf1664da26179a630f863933033d74ab75/wcmatch-8.5-py3-none-any.whl.metadata
+  Downloading wcmatch-8.5-py3-none-any.whl.metadata (5.1 kB)
+Collecting pyflakes<2.4.0,>=2.3.0 (from flake8==3.9.2->-r requirements.txt (line 9))
+  Downloading pyflakes-2.3.1-py2.py3-none-any.whl (68 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 68.8/68.8 kB 33.8 MB/s eta 0:00:00
+Collecting pycodestyle<2.8.0,>=2.7.0 (from flake8==3.9.2->-r requirements.txt (line 9))
+  Downloading pycodestyle-2.7.0-py2.py3-none-any.whl (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.7/41.7 kB 16.4 MB/s eta 0:00:00
+Collecting mccabe<0.7.0,>=0.6.0 (from flake8==3.9.2->-r requirements.txt (line 9))
+  Downloading mccabe-0.6.1-py2.py3-none-any.whl (8.6 kB)
+Collecting requests (from linode_api4==5.5.0->-r requirements.txt (line 10))
+  Obtaining dependency information for requests from https://files.pythonhosted.org/packages/70/8e/0e2d847013cb52cd35b38c009bb167a1a26b2ce6cd6965bf26b47bc0bf44/requests-2.31.0-py3-none-any.whl.metadata
+  Downloading requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting Jinja2>=3.0.1 (from ansible-specdoc==0.0.14->-r requirements.txt (line 13))
+  Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.1/133.1 kB 48.9 MB/s eta 0:00:00
+Collecting redbaron>=0.9.2 (from ansible-specdoc==0.0.14->-r requirements.txt (line 13))
+  Downloading redbaron-0.9.2-py2.py3-none-any.whl (34 kB)
+Collecting subprocess-tee>=0.4.1 (from ansible-compat>=2.0.2->ansible-lint==6.0.1->-r requirements.txt (line 8))
+  Downloading subprocess_tee-0.4.1-py3-none-any.whl (5.1 kB)
+Collecting jsonschema>=4.6.0 (from ansible-compat>=2.0.2->ansible-lint==6.0.1->-r requirements.txt (line 8))
+  Obtaining dependency information for jsonschema>=4.6.0 from https://files.pythonhosted.org/packages/0f/bf/a84bc75f069f4f156e1c0d9892fb7325945106c6ecaad9f29d24360872af/jsonschema-4.19.1-py3-none-any.whl.metadata
+  Downloading jsonschema-4.19.1-py3-none-any.whl.metadata (7.9 kB)
+Collecting cryptography (from ansible-core~=2.13.0->ansible==6.0.0->-r requirements.txt (line 1))
+  Obtaining dependency information for cryptography from https://files.pythonhosted.org/packages/eb/4b/f86cc66c632cf0948ca1712aadd255f624deef1cd371ea3bfd30851e188d/cryptography-41.0.4-cp37-abi3-manylinux_2_28_x86_64.whl.metadata
+  Downloading cryptography-41.0.4-cp37-abi3-manylinux_2_28_x86_64.whl.metadata (5.2 kB)
+Collecting resolvelib<0.9.0,>=0.5.3 (from ansible-core~=2.13.0->ansible==6.0.0->-r requirements.txt (line 1))
+  Downloading resolvelib-0.8.1-py2.py3-none-any.whl (16 kB)
+Collecting MarkupSafe>=2.0 (from Jinja2>=3.0.1->ansible-specdoc==0.0.14->-r requirements.txt (line 13))
+  Obtaining dependency information for MarkupSafe>=2.0 from https://files.pythonhosted.org/packages/12/b3/d9ed2c0971e1435b8a62354b18d3060b66c8cb1d368399ec0b9baa7c0ee5/MarkupSafe-2.1.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading MarkupSafe-2.1.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.0 kB)
+Collecting baron>=0.7 (from redbaron>=0.9.2->ansible-specdoc==0.0.14->-r requirements.txt (line 13))
+  Downloading baron-0.10.1-py2.py3-none-any.whl (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 20.4 MB/s eta 0:00:00
+Collecting markdown-it-py>=2.2.0 (from rich>=9.5.1->ansible-lint==6.0.1->-r requirements.txt (line 8))
+  Obtaining dependency information for markdown-it-py>=2.2.0 from https://files.pythonhosted.org/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c14f1f/markdown_it_py-3.0.0-py3-none-any.whl.metadata
+  Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=9.5.1->ansible-lint==6.0.1->-r requirements.txt (line 8))
+  Obtaining dependency information for pygments<3.0.0,>=2.13.0 from https://files.pythonhosted.org/packages/43/88/29adf0b44ba6ac85045e63734ae0997d3c58d8b1a91c914d240828d0d73d/Pygments-2.16.1-py3-none-any.whl.metadata
+  Downloading Pygments-2.16.1-py3-none-any.whl.metadata (2.5 kB)
+Collecting ruamel.yaml.clib>=0.2.7 (from ruamel.yaml<0.18,>=0.15.34->ansible-lint==6.0.1->-r requirements.txt (line 8))
+  Downloading ruamel.yaml.clib-0.2.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (485 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 485.6/485.6 kB 123.2 MB/s eta 0:00:00
+Collecting bracex>=2.1.1 (from wcmatch>=7.0->ansible-lint==6.0.1->-r requirements.txt (line 8))
+  Obtaining dependency information for bracex>=2.1.1 from https://files.pythonhosted.org/packages/2b/f5/8f99837b32e2badc189382774dbe6227fa01e1e928a7eff857fdc89d8a75/bracex-2.4-py3-none-any.whl.metadata
+  Downloading bracex-2.4-py3-none-any.whl.metadata (3.6 kB)
+Collecting charset-normalizer<4,>=2 (from requests->linode_api4==5.5.0->-r requirements.txt (line 10))
+  Obtaining dependency information for charset-normalizer<4,>=2 from https://files.pythonhosted.org/packages/a4/65/057bf29660aae6ade0816457f8db4e749e5c0bfa2366eb5f67db9912fa4c/charset_normalizer-3.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading charset_normalizer-3.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (31 kB)
+Collecting idna<4,>=2.5 (from requests->linode_api4==5.5.0->-r requirements.txt (line 10))
+  Downloading idna-3.4-py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.5/61.5 kB 27.3 MB/s eta 0:00:00
+Collecting urllib3<3,>=1.21.1 (from requests->linode_api4==5.5.0->-r requirements.txt (line 10))
+  Obtaining dependency information for urllib3<3,>=1.21.1 from https://files.pythonhosted.org/packages/37/dc/399e63f5d1d96bb643404ee830657f4dfcf8503f5ba8fa3c6d465d0c57fe/urllib3-2.0.5-py3-none-any.whl.metadata
+  Downloading urllib3-2.0.5-py3-none-any.whl.metadata (6.6 kB)
+Collecting certifi>=2017.4.17 (from requests->linode_api4==5.5.0->-r requirements.txt (line 10))
+  Obtaining dependency information for certifi>=2017.4.17 from https://files.pythonhosted.org/packages/4c/dd/2234eab22353ffc7d94e8d13177aaa050113286e93e7b40eae01fbf7c3d9/certifi-2023.7.22-py3-none-any.whl.metadata
+  Downloading certifi-2023.7.22-py3-none-any.whl.metadata (2.2 kB)
+Collecting rply (from baron>=0.7->redbaron>=0.9.2->ansible-specdoc==0.0.14->-r requirements.txt (line 13))
+  Downloading rply-0.7.8-py2.py3-none-any.whl (16 kB)
+Collecting attrs>=22.2.0 (from jsonschema>=4.6.0->ansible-compat>=2.0.2->ansible-lint==6.0.1->-r requirements.txt (line 8))
+  Downloading attrs-23.1.0-py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 kB 29.9 MB/s eta 0:00:00
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=4.6.0->ansible-compat>=2.0.2->ansible-lint==6.0.1->-r requirements.txt (line 8))
+  Obtaining dependency information for jsonschema-specifications>=2023.03.6 from https://files.pythonhosted.org/packages/1c/24/83349ac2189cc2435e84da3f69ba3c97314d3c0622628e55171c6798ed80/jsonschema_specifications-2023.7.1-py3-none-any.whl.metadata
+  Downloading jsonschema_specifications-2023.7.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=4.6.0->ansible-compat>=2.0.2->ansible-lint==6.0.1->-r requirements.txt (line 8))
+  Obtaining dependency information for referencing>=0.28.4 from https://files.pythonhosted.org/packages/be/8e/56d6f1e2d591f4d6cbcba446cac4a1b0dc4f584537e2071d9bcee8eeab6b/referencing-0.30.2-py3-none-any.whl.metadata
+  Downloading referencing-0.30.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting rpds-py>=0.7.1 (from jsonschema>=4.6.0->ansible-compat>=2.0.2->ansible-lint==6.0.1->-r requirements.txt (line 8))
+  Obtaining dependency information for rpds-py>=0.7.1 from https://files.pythonhosted.org/packages/2e/b5/bb6d90878ef8df7df279af68379266285eff135dfa7fe9985e19e10b1a43/rpds_py-0.10.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading rpds_py-0.10.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.7 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=9.5.1->ansible-lint==6.0.1->-r requirements.txt (line 8))
+  Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Collecting cffi>=1.12 (from cryptography->ansible-core~=2.13.0->ansible==6.0.0->-r requirements.txt (line 1))
+  Downloading cffi-1.15.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (441 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 441.8/441.8 kB 93.9 MB/s eta 0:00:00
+Collecting pycparser (from cffi>=1.12->cryptography->ansible-core~=2.13.0->ansible==6.0.0->-r requirements.txt (line 1))
+  Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 kB 47.6 MB/s eta 0:00:00
+Collecting appdirs (from rply->baron>=0.7->redbaron>=0.9.2->ansible-specdoc==0.0.14->-r requirements.txt (line 13))
+  Downloading appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+Downloading yamllint-1.32.0-py3-none-any.whl (65 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.4/65.4 kB 27.1 MB/s eta 0:00:00
+Downloading PyYAML-6.0.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (705 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 705.5/705.5 kB 103.0 MB/s eta 0:00:00
+Downloading linode_api4-5.5.0-py3-none-any.whl (95 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.0/96.0 kB 42.1 MB/s eta 0:00:00
+Downloading ansible_specdoc-0.0.14-py3-none-any.whl (12 kB)
+Downloading ansible_compat-4.1.10-py3-none-any.whl (22 kB)
+Downloading ansible_core-2.13.12-py3-none-any.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 124.6 MB/s eta 0:00:00
+Downloading pathspec-0.11.2-py3-none-any.whl (29 kB)
+Downloading rich-13.5.3-py3-none-any.whl (239 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 239.8/239.8 kB 79.3 MB/s eta 0:00:00
+Downloading ruamel.yaml-0.17.32-py3-none-any.whl (112 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 112.2/112.2 kB 52.2 MB/s eta 0:00:00
+Downloading wcmatch-8.5-py3-none-any.whl (39 kB)
+Downloading requests-2.31.0-py3-none-any.whl (62 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.6/62.6 kB 35.3 MB/s eta 0:00:00
+Downloading bracex-2.4-py3-none-any.whl (11 kB)
+Downloading certifi-2023.7.22-py3-none-any.whl (158 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 158.3/158.3 kB 72.5 MB/s eta 0:00:00
+Downloading charset_normalizer-3.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (201 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 201.8/201.8 kB 72.7 MB/s eta 0:00:00
+Downloading jsonschema-4.19.1-py3-none-any.whl (83 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 83.3/83.3 kB 40.0 MB/s eta 0:00:00
+Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 47.2 MB/s eta 0:00:00
+Downloading MarkupSafe-2.1.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+Downloading Pygments-2.16.1-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 138.7 MB/s eta 0:00:00
+Downloading urllib3-2.0.5-py3-none-any.whl (123 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 123.8/123.8 kB 56.0 MB/s eta 0:00:00
+Downloading cryptography-41.0.4-cp37-abi3-manylinux_2_28_x86_64.whl (4.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.4/4.4 MB 135.7 MB/s eta 0:00:00
+Downloading jsonschema_specifications-2023.7.1-py3-none-any.whl (17 kB)
+Downloading referencing-0.30.2-py3-none-any.whl (25 kB)
+Downloading rpds_py-0.10.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 144.9 MB/s eta 0:00:00
+Building wheels for collected packages: polling
+  Building wheel for polling (setup.py): started
+  Building wheel for polling (setup.py): finished with status 'done'
+  Created wheel for polling: filename=polling-0.3.2-py3-none-any.whl size=4123 sha256=90ee522fd8dcf6c4ce5aa3bcfd245a434e6eb1c919c47e46209a7cd403f2e1ad
+  Stored in directory: /root/.cache/pip/wheels/15/00/39/102a6b8c45f85795140deb543fb35f42b5510471a498a130ce
+Successfully built polling
+Installing collected packages: resolvelib, polling, mccabe, appdirs, urllib3, subprocess-tee, ruamel.yaml.clib, rply, rpds-py, pyyaml, PyMySQL, pygments, pyflakes, pycparser, pycodestyle, pathspec, packaging, mdurl, MarkupSafe, idna, dnspython, charset-normalizer, certifi, bracex, attrs, yamllint, wcmatch, ruamel.yaml, requests, referencing, markdown-it-py, Jinja2, flake8, cffi, baron, rich, redbaron, linode_api4, jsonschema-specifications, cryptography, jsonschema, enrich, ansible-specdoc, ansible-core, ansible-compat, ansible, ansible-lint
+Successfully installed Jinja2-3.1.2 MarkupSafe-2.1.3 PyMySQL-1.0.2 ansible-6.0.0 ansible-compat-4.1.10 ansible-core-2.13.12 ansible-lint-6.0.1 ansible-specdoc-0.0.14 appdirs-1.4.4 attrs-23.1.0 baron-0.10.1 bracex-2.4 certifi-2023.7.22 cffi-1.15.1 charset-normalizer-3.2.0 cryptography-41.0.4 dnspython-2.2.1 enrich-1.2.7 flake8-3.9.2 idna-3.4 jsonschema-4.19.1 jsonschema-specifications-2023.7.1 linode_api4-5.5.0 markdown-it-py-3.0.0 mccabe-0.6.1 mdurl-0.1.2 packaging-23.1 pathspec-0.11.2 polling-0.3.2 pycodestyle-2.7.0 pycparser-2.21 pyflakes-2.3.1 pygments-2.16.1 pyyaml-6.0.1 redbaron-0.9.2 referencing-0.30.2 requests-2.31.0 resolvelib-0.8.1 rich-13.5.3 rpds-py-0.10.3 rply-0.7.8 ruamel.yaml-0.17.32 ruamel.yaml.clib-0.2.7 subprocess-tee-0.4.1 urllib3-2.0.5 wcmatch-8.5 yamllint-1.32.0
+Starting galaxy collection install process
+Process install dependency map
+Starting collection install process
+Downloading https://galaxy.ansible.com/download/community-mysql-3.7.1.tar.gz to /root/.ansible/tmp/ansible-local-2436dd9_gnv3/tmpc_0voz2v/community-mysql-3.7.1-bfiscvul
+Installing 'community.mysql:3.7.1' to '/root/.ansible/collections/ansible_collections/community/mysql'
+community.mysql:3.7.1 was installed successfully
+Downloading https://galaxy.ansible.com/download/linode-cloud-0.16.1.tar.gz to /root/.ansible/tmp/ansible-local-2436dd9_gnv3/tmpc_0voz2v/linode-cloud-0.16.1-yahti5xo
+Installing 'linode.cloud:0.16.1' to '/root/.ansible/collections/ansible_collections/linode/cloud'
+linode.cloud:0.16.1 was installed successfully
+No pubkey entered
+Leaving root login enabled
+ansible-playbook [core 2.13.12]
+  config file = /tmp/marketplace-apps/apps/linode-marketplace-wordpress/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/lib/python3.10/site-packages/ansible
+  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections
+  executable location = /tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/bin/ansible-playbook
+  python version = 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
+  jinja version = 3.1.2
+  libyaml = True
+Using /tmp/marketplace-apps/apps/linode-marketplace-wordpress/ansible.cfg as config file
+setting up inventory plugins
+host_list declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+script declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+auto declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+yaml declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+ini declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+toml declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+Read vars_file 'group_vars/linode/vars'
+statically imported: /tmp/marketplace-apps/apps/linode_helpers/roles/securemysql/tasks/passgen.yml
+Loading callback plugin default of type stdout, v2.0 from /tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/lib/python3.10/site-packages/ansible/plugins/callback/default.py
+Skipping callback 'default', as we already have a stdout callback.
+Skipping callback 'minimal', as we already have a stdout callback.
+Skipping callback 'oneline', as we already have a stdout callback.
+
+PLAYBOOK: provision.yml ********************************************************
+Positional arguments: provision.yml
+verbosity: 4
+connection: smart
+timeout: 10
+become_method: sudo
+tags: ('all',)
+inventory: ('/etc/ansible/hosts',)
+forks: 5
+1 plays in provision.yml
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+
+PLAY [setting up environment] **************************************************
+Read vars_file 'group_vars/linode/vars'
+
+TASK [Gathering Facts] *********************************************************
+task path: /tmp/marketplace-apps/apps/linode-marketplace-wordpress/provision.yml:4
+<127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+<127.0.0.1> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1695322131.5798864-2505-33484516086992 `" && echo ansible-tmp-1695322131.5798864-2505-33484516086992="` echo /root/.ansible/tmp/ansible-tmp-1695322131.5798864-2505-33484516086992 `" ) && sleep 0'
+Using module file /tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/lib/python3.10/site-packages/ansible/modules/setup.py
+<127.0.0.1> PUT /root/.ansible/tmp/ansible-local-2501qgwqm2rr/tmpifskpqc6 TO /root/.ansible/tmp/ansible-tmp-1695322131.5798864-2505-33484516086992/AnsiballZ_setup.py
+<127.0.0.1> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1695322131.5798864-2505-33484516086992/ /root/.ansible/tmp/ansible-tmp-1695322131.5798864-2505-33484516086992/AnsiballZ_setup.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '/tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/bin/python /root/.ansible/tmp/ansible-tmp-1695322131.5798864-2505-33484516086992/AnsiballZ_setup.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1695322131.5798864-2505-33484516086992/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost]
+Read vars_file 'group_vars/linode/vars'
+META: ran handlers
+Read vars_file 'group_vars/linode/vars'
+
+TASK [generating mysql root password] ******************************************
+task path: /tmp/marketplace-apps/apps/linode_helpers/roles/securemysql/tasks/passgen.yml:6
+ok: [localhost] => {
+    "ansible_facts": {
+        "MYSQL_ROOT_PASSWORD": "0GFw3y9F594o4d3hLRgUjwFd3OMU2Qvr2ZPgW9hZnZrLZ"
+    },
+    "changed": false
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [writing mysql root password to vars] *************************************
+task path: /tmp/marketplace-apps/apps/linode_helpers/roles/securemysql/tasks/passgen.yml:10
+<127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+<127.0.0.1> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1695322132.7384682-2576-58425465909693 `" && echo ansible-tmp-1695322132.7384682-2576-58425465909693="` echo /root/.ansible/tmp/ansible-tmp-1695322132.7384682-2576-58425465909693 `" ) && sleep 0'
+Using module file /tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/lib/python3.10/site-packages/ansible/modules/lineinfile.py
+<127.0.0.1> PUT /root/.ansible/tmp/ansible-local-2501qgwqm2rr/tmp3t4r5y_1 TO /root/.ansible/tmp/ansible-tmp-1695322132.7384682-2576-58425465909693/AnsiballZ_lineinfile.py
+<127.0.0.1> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1695322132.7384682-2576-58425465909693/ /root/.ansible/tmp/ansible-tmp-1695322132.7384682-2576-58425465909693/AnsiballZ_lineinfile.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '/tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/bin/python /root/.ansible/tmp/ansible-tmp-1695322132.7384682-2576-58425465909693/AnsiballZ_lineinfile.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1695322132.7384682-2576-58425465909693/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "backup": "",
+    "changed": true,
+    "diff": [
+        {
+            "after": "",
+            "after_header": "group_vars/linode/vars (content)",
+            "before": "",
+            "before_header": "group_vars/linode/vars (content)"
+        },
+        {
+            "after_header": "group_vars/linode/vars (file attributes)",
+            "before_header": "group_vars/linode/vars (file attributes)"
+        }
+    ],
+    "invocation": {
+        "module_args": {
+            "attributes": null,
+            "backrefs": false,
+            "backup": false,
+            "create": false,
+            "firstmatch": false,
+            "group": null,
+            "insertafter": "EOF",
+            "insertbefore": null,
+            "line": "mysql_root_password: 0GFw3y9F594o4d3hLRgUjwFd3OMU2Qvr2ZPgW9hZnZrLZ\n",
+            "mode": null,
+            "owner": null,
+            "path": "group_vars/linode/vars",
+            "regexp": null,
+            "search_string": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "state": "present",
+            "unsafe_writes": false,
+            "validate": null
+        }
+    },
+    "msg": "line added"
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [generating wordpress db password] ****************************************
+task path: /tmp/marketplace-apps/apps/linode-marketplace-wordpress/provision.yml:16
+ok: [localhost] => {
+    "ansible_facts": {
+        "WP_DB_PASS": "KtROgoBMKM9TX0k4ueS9lbuZXaEg6kX67gxWALD6kD6re"
+    },
+    "changed": false
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [writing wordpress db password to vars] ***********************************
+task path: /tmp/marketplace-apps/apps/linode-marketplace-wordpress/provision.yml:20
+<127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+<127.0.0.1> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1695322133.0726893-2604-76635591906779 `" && echo ansible-tmp-1695322133.0726893-2604-76635591906779="` echo /root/.ansible/tmp/ansible-tmp-1695322133.0726893-2604-76635591906779 `" ) && sleep 0'
+Using module file /tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/lib/python3.10/site-packages/ansible/modules/lineinfile.py
+<127.0.0.1> PUT /root/.ansible/tmp/ansible-local-2501qgwqm2rr/tmp2iqbw9jc TO /root/.ansible/tmp/ansible-tmp-1695322133.0726893-2604-76635591906779/AnsiballZ_lineinfile.py
+<127.0.0.1> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1695322133.0726893-2604-76635591906779/ /root/.ansible/tmp/ansible-tmp-1695322133.0726893-2604-76635591906779/AnsiballZ_lineinfile.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '/tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/bin/python /root/.ansible/tmp/ansible-tmp-1695322133.0726893-2604-76635591906779/AnsiballZ_lineinfile.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1695322133.0726893-2604-76635591906779/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "backup": "",
+    "changed": true,
+    "diff": [
+        {
+            "after": "",
+            "after_header": "group_vars/linode/vars (content)",
+            "before": "",
+            "before_header": "group_vars/linode/vars (content)"
+        },
+        {
+            "after_header": "group_vars/linode/vars (file attributes)",
+            "before_header": "group_vars/linode/vars (file attributes)"
+        }
+    ],
+    "invocation": {
+        "module_args": {
+            "attributes": null,
+            "backrefs": false,
+            "backup": false,
+            "create": false,
+            "firstmatch": false,
+            "group": null,
+            "insertafter": "EOF",
+            "insertbefore": null,
+            "line": "wp_db_pass: KtROgoBMKM9TX0k4ueS9lbuZXaEg6kX67gxWALD6kD6re\n",
+            "mode": null,
+            "owner": null,
+            "path": "group_vars/linode/vars",
+            "regexp": null,
+            "search_string": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "state": "present",
+            "unsafe_writes": false,
+            "validate": null
+        }
+    },
+    "msg": "line added"
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [generating wordpress admin password] *************************************
+task path: /tmp/marketplace-apps/apps/linode-marketplace-wordpress/provision.yml:28
+ok: [localhost] => {
+    "ansible_facts": {
+        "WP_ADMIN_PASS": "GlmSRqksFhCJAJ52QirTmWd7T8qIEo6m0crGdVnUXRaP9"
+    },
+    "changed": false
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [writing wordpress admin password to vars] ********************************
+task path: /tmp/marketplace-apps/apps/linode-marketplace-wordpress/provision.yml:32
+<127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+<127.0.0.1> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1695322133.2820787-2632-257200882733105 `" && echo ansible-tmp-1695322133.2820787-2632-257200882733105="` echo /root/.ansible/tmp/ansible-tmp-1695322133.2820787-2632-257200882733105 `" ) && sleep 0'
+Using module file /tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/lib/python3.10/site-packages/ansible/modules/lineinfile.py
+<127.0.0.1> PUT /root/.ansible/tmp/ansible-local-2501qgwqm2rr/tmpawdi8ogw TO /root/.ansible/tmp/ansible-tmp-1695322133.2820787-2632-257200882733105/AnsiballZ_lineinfile.py
+<127.0.0.1> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1695322133.2820787-2632-257200882733105/ /root/.ansible/tmp/ansible-tmp-1695322133.2820787-2632-257200882733105/AnsiballZ_lineinfile.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '/tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/bin/python /root/.ansible/tmp/ansible-tmp-1695322133.2820787-2632-257200882733105/AnsiballZ_lineinfile.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1695322133.2820787-2632-257200882733105/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "backup": "",
+    "changed": true,
+    "diff": [
+        {
+            "after": "",
+            "after_header": "group_vars/linode/vars (content)",
+            "before": "",
+            "before_header": "group_vars/linode/vars (content)"
+        },
+        {
+            "after_header": "group_vars/linode/vars (file attributes)",
+            "before_header": "group_vars/linode/vars (file attributes)"
+        }
+    ],
+    "invocation": {
+        "module_args": {
+            "attributes": null,
+            "backrefs": false,
+            "backup": false,
+            "create": false,
+            "firstmatch": false,
+            "group": null,
+            "insertafter": "EOF",
+            "insertbefore": null,
+            "line": "wp_admin_pass: GlmSRqksFhCJAJ52QirTmWd7T8qIEo6m0crGdVnUXRaP9\n",
+            "mode": null,
+            "owner": null,
+            "path": "group_vars/linode/vars",
+            "regexp": null,
+            "search_string": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "state": "present",
+            "unsafe_writes": false,
+            "validate": null
+        }
+    },
+    "msg": "line added"
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [selecting the stack we are deploying in] *********************************
+task path: /tmp/marketplace-apps/apps/linode-marketplace-wordpress/provision.yml:39
+<127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+<127.0.0.1> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1695322133.4718132-2658-36093414867865 `" && echo ansible-tmp-1695322133.4718132-2658-36093414867865="` echo /root/.ansible/tmp/ansible-tmp-1695322133.4718132-2658-36093414867865 `" ) && sleep 0'
+Using module file /tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/lib/python3.10/site-packages/ansible/modules/lineinfile.py
+<127.0.0.1> PUT /root/.ansible/tmp/ansible-local-2501qgwqm2rr/tmph1pg4wvx TO /root/.ansible/tmp/ansible-tmp-1695322133.4718132-2658-36093414867865/AnsiballZ_lineinfile.py
+<127.0.0.1> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1695322133.4718132-2658-36093414867865/ /root/.ansible/tmp/ansible-tmp-1695322133.4718132-2658-36093414867865/AnsiballZ_lineinfile.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '/tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/bin/python /root/.ansible/tmp/ansible-tmp-1695322133.4718132-2658-36093414867865/AnsiballZ_lineinfile.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1695322133.4718132-2658-36093414867865/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "backup": "",
+    "changed": true,
+    "diff": [
+        {
+            "after": "",
+            "after_header": "site.yml (content)",
+            "before": "",
+            "before_header": "site.yml (content)"
+        },
+        {
+            "after_header": "site.yml (file attributes)",
+            "before_header": "site.yml (file attributes)"
+        }
+    ],
+    "invocation": {
+        "module_args": {
+            "attributes": null,
+            "backrefs": false,
+            "backup": false,
+            "create": false,
+            "firstmatch": false,
+            "group": null,
+            "insertafter": null,
+            "insertbefore": null,
+            "line": "    - lamp",
+            "mode": null,
+            "owner": null,
+            "path": "site.yml",
+            "regexp": "PROVISIONER-WEBSERVER-STACK",
+            "search_string": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "state": "present",
+            "unsafe_writes": false,
+            "validate": null
+        }
+    },
+    "msg": "line replaced"
+}
+Read vars_file 'group_vars/linode/vars'
+META: ran handlers
+Read vars_file 'group_vars/linode/vars'
+META: ran handlers
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=8    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+ansible-playbook [core 2.13.12]
+  config file = /tmp/marketplace-apps/apps/linode-marketplace-wordpress/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/lib/python3.10/site-packages/ansible
+  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections
+  executable location = /tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/bin/ansible-playbook
+  python version = 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
+  jinja version = 3.1.2
+  libyaml = True
+Using /tmp/marketplace-apps/apps/linode-marketplace-wordpress/ansible.cfg as config file
+setting up inventory plugins
+host_list declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+script declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+auto declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+yaml declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+ini declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+toml declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Loading collection linode.cloud from /root/.ansible/collections/ansible_collections/linode/cloud
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+redirecting (type: modules) ansible.builtin.ufw to community.general.ufw
+Loading collection community.general from /tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/lib/python3.10/site-packages/ansible_collections/community/general
+redirecting (type: modules) community.general.ufw to community.general.system.ufw
+redirecting (type: modules) ansible.builtin.ufw to community.general.ufw
+redirecting (type: modules) community.general.ufw to community.general.system.ufw
+redirecting (type: modules) ansible.builtin.ufw to community.general.ufw
+redirecting (type: modules) community.general.ufw to community.general.system.ufw
+Read vars_file 'group_vars/linode/vars'
+statically imported: /tmp/marketplace-apps/apps/linode-marketplace-wordpress/roles/common/tasks/ufw_rules.yml
+redirecting (type: modules) community.general.ufw to community.general.system.ufw
+redirecting (type: modules) community.general.ufw to community.general.system.ufw
+redirecting (type: modules) community.general.ufw to community.general.system.ufw
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+redirecting (type: modules) ansible.builtin.apache2_module to community.general.apache2_module
+redirecting (type: modules) community.general.apache2_module to community.general.web_infrastructure.apache2_module
+Read vars_file 'group_vars/linode/vars'
+statically imported: /tmp/marketplace-apps/apps/linode-marketplace-wordpress/roles/lamp/tasks/apache_configs.yml
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+redirecting (type: modules) ansible.builtin.mysql_query to community.mysql.mysql_query
+Loading collection community.mysql from /root/.ansible/collections/ansible_collections/community/mysql
+redirecting (type: modules) ansible.builtin.mysql_user to community.mysql.mysql_user
+redirecting (type: modules) ansible.builtin.mysql_user to community.mysql.mysql_user
+redirecting (type: modules) ansible.builtin.mysql_db to community.mysql.mysql_db
+redirecting (type: modules) ansible.builtin.mysql_db to community.mysql.mysql_db
+redirecting (type: modules) ansible.builtin.mysql_user to community.mysql.mysql_user
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Loading callback plugin default of type stdout, v2.0 from /tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/lib/python3.10/site-packages/ansible/plugins/callback/default.py
+Skipping callback 'default', as we already have a stdout callback.
+Skipping callback 'minimal', as we already have a stdout callback.
+Skipping callback 'oneline', as we already have a stdout callback.
+
+PLAYBOOK: site.yml *************************************************************
+Positional arguments: site.yml
+verbosity: 4
+connection: smart
+timeout: 10
+become_method: sudo
+tags: ('all',)
+inventory: ('/etc/ansible/hosts',)
+forks: 5
+1 plays in site.yml
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+Read vars_file 'group_vars/linode/vars'
+
+PLAY [configuring Wordpress] ***************************************************
+Read vars_file 'group_vars/linode/vars'
+
+TASK [Gathering Facts] *********************************************************
+task path: /tmp/marketplace-apps/apps/linode-marketplace-wordpress/site.yml:3
+<127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+<127.0.0.1> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1695322134.3670635-2689-260115315005378 `" && echo ansible-tmp-1695322134.3670635-2689-260115315005378="` echo /root/.ansible/tmp/ansible-tmp-1695322134.3670635-2689-260115315005378 `" ) && sleep 0'
+Using module file /tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/lib/python3.10/site-packages/ansible/modules/setup.py
+<127.0.0.1> PUT /root/.ansible/tmp/ansible-local-26855tmt64rq/tmpob4s7i70 TO /root/.ansible/tmp/ansible-tmp-1695322134.3670635-2689-260115315005378/AnsiballZ_setup.py
+<127.0.0.1> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1695322134.3670635-2689-260115315005378/ /root/.ansible/tmp/ansible-tmp-1695322134.3670635-2689-260115315005378/AnsiballZ_setup.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '/tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/bin/python /root/.ansible/tmp/ansible-tmp-1695322134.3670635-2689-260115315005378/AnsiballZ_setup.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1695322134.3670635-2689-260115315005378/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost]
+Read vars_file 'group_vars/linode/vars'
+META: ran handlers
+Read vars_file 'group_vars/linode/vars'
+
+TASK [hostname : set dns fact for subdomain] ***********************************
+task path: /tmp/marketplace-apps/apps/linode_helpers/roles/hostname/tasks/main.yml:6
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [hostname : set dns fact for domain] **************************************
+task path: /tmp/marketplace-apps/apps/linode_helpers/roles/hostname/tasks/main.yml:14
+ok: [localhost] => {
+    "ansible_facts": {
+        "_domain": "jccsutils.net"
+    },
+    "changed": false
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [hostname : set dns fact for default dns] *********************************
+task path: /tmp/marketplace-apps/apps/linode_helpers/roles/hostname/tasks/main.yml:22
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [hostname : setting system hostname] **************************************
+task path: /tmp/marketplace-apps/apps/linode_helpers/roles/hostname/tasks/main.yml:28
+<127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+<127.0.0.1> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1695322135.4693785-2764-88937350066766 `" && echo ansible-tmp-1695322135.4693785-2764-88937350066766="` echo /root/.ansible/tmp/ansible-tmp-1695322135.4693785-2764-88937350066766 `" ) && sleep 0'
+Using module file /tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/lib/python3.10/site-packages/ansible/modules/hostname.py
+<127.0.0.1> PUT /root/.ansible/tmp/ansible-local-26855tmt64rq/tmp2aicsbwi TO /root/.ansible/tmp/ansible-tmp-1695322135.4693785-2764-88937350066766/AnsiballZ_hostname.py
+<127.0.0.1> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1695322135.4693785-2764-88937350066766/ /root/.ansible/tmp/ansible-tmp-1695322135.4693785-2764-88937350066766/AnsiballZ_hostname.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '/tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/bin/python /root/.ansible/tmp/ansible-tmp-1695322135.4693785-2764-88937350066766/AnsiballZ_hostname.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1695322135.4693785-2764-88937350066766/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "ansible_facts": {
+        "ansible_domain": "net",
+        "ansible_fqdn": "jccsutils.net",
+        "ansible_hostname": "jccsutils",
+        "ansible_nodename": "jccsutils.net"
+    },
+    "changed": true,
+    "diff": {
+        "after": "hostname = jccsutils.net\n",
+        "before": "hostname = localhost\n"
+    },
+    "invocation": {
+        "module_args": {
+            "name": "jccsutils.net",
+            "use": null
+        }
+    },
+    "name": "jccsutils.net"
+}
+Read vars_file 'group_vars/linode/vars'
+META: role_complete for localhost
+Read vars_file 'group_vars/linode/vars'
+
+TASK [common : write _domain to vars] ******************************************
+task path: /tmp/marketplace-apps/apps/linode-marketplace-wordpress/roles/common/tasks/main.yml:8
+<127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+<127.0.0.1> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1695322136.216609-2799-159331969577980 `" && echo ansible-tmp-1695322136.216609-2799-159331969577980="` echo /root/.ansible/tmp/ansible-tmp-1695322136.216609-2799-159331969577980 `" ) && sleep 0'
+Using module file /tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/lib/python3.10/site-packages/ansible/modules/lineinfile.py
+<127.0.0.1> PUT /root/.ansible/tmp/ansible-local-26855tmt64rq/tmpr7rpr9ki TO /root/.ansible/tmp/ansible-tmp-1695322136.216609-2799-159331969577980/AnsiballZ_lineinfile.py
+<127.0.0.1> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1695322136.216609-2799-159331969577980/ /root/.ansible/tmp/ansible-tmp-1695322136.216609-2799-159331969577980/AnsiballZ_lineinfile.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '/tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/bin/python /root/.ansible/tmp/ansible-tmp-1695322136.216609-2799-159331969577980/AnsiballZ_lineinfile.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1695322136.216609-2799-159331969577980/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "backup": "",
+    "changed": true,
+    "diff": [
+        {
+            "after": "",
+            "after_header": "group_vars/linode/vars (content)",
+            "before": "",
+            "before_header": "group_vars/linode/vars (content)"
+        },
+        {
+            "after_header": "group_vars/linode/vars (file attributes)",
+            "before_header": "group_vars/linode/vars (file attributes)"
+        }
+    ],
+    "invocation": {
+        "module_args": {
+            "attributes": null,
+            "backrefs": false,
+            "backup": false,
+            "create": false,
+            "firstmatch": false,
+            "group": null,
+            "insertafter": "EOF",
+            "insertbefore": null,
+            "line": "_domain: jccsutils.net\n",
+            "mode": null,
+            "owner": null,
+            "path": "group_vars/linode/vars",
+            "regexp": null,
+            "search_string": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "state": "present",
+            "unsafe_writes": false,
+            "validate": null
+        }
+    },
+    "msg": "line added"
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [sudouser : set sudo user] ************************************************
+task path: /tmp/marketplace-apps/apps/linode_helpers/roles/sudouser/tasks/main.yml:2
+<127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+<127.0.0.1> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1695322136.537664-2825-252575969891178 `" && echo ansible-tmp-1695322136.537664-2825-252575969891178="` echo /root/.ansible/tmp/ansible-tmp-1695322136.537664-2825-252575969891178 `" ) && sleep 0'
+Using module file /tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/lib/python3.10/site-packages/ansible/modules/user.py
+<127.0.0.1> PUT /root/.ansible/tmp/ansible-local-26855tmt64rq/tmp7uaq8wqu TO /root/.ansible/tmp/ansible-tmp-1695322136.537664-2825-252575969891178/AnsiballZ_user.py
+<127.0.0.1> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1695322136.537664-2825-252575969891178/ /root/.ansible/tmp/ansible-tmp-1695322136.537664-2825-252575969891178/AnsiballZ_user.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '/tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/bin/python /root/.ansible/tmp/ansible-tmp-1695322136.537664-2825-252575969891178/AnsiballZ_user.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1695322136.537664-2825-252575969891178/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "comment": "",
+    "create_home": true,
+    "group": 1000,
+    "groups": "sudo",
+    "home": "/home/jucot",
+    "invocation": {
+        "module_args": {
+            "append": true,
+            "authorization": null,
+            "comment": null,
+            "create_home": true,
+            "expires": -1.0,
+            "force": false,
+            "generate_ssh_key": true,
+            "group": null,
+            "groups": [
+                "sudo"
+            ],
+            "hidden": null,
+            "home": null,
+            "local": null,
+            "login_class": null,
+            "move_home": false,
+            "name": "jucot",
+            "non_unique": false,
+            "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "password_expire_max": null,
+            "password_expire_min": null,
+            "password_lock": null,
+            "profile": null,
+            "remove": false,
+            "role": null,
+            "seuser": null,
+            "shell": "/bin/bash",
+            "skeleton": null,
+            "ssh_key_bits": 4096,
+            "ssh_key_comment": "ansible-generated on jccsutils.net",
+            "ssh_key_file": ".ssh/id_rsa",
+            "ssh_key_passphrase": null,
+            "ssh_key_type": "rsa",
+            "state": "present",
+            "system": false,
+            "uid": null,
+            "umask": null,
+            "update_password": "on_create"
+        }
+    },
+    "name": "jucot",
+    "password": "NOT_LOGGING_PASSWORD",
+    "shell": "/bin/bash",
+    "ssh_fingerprint": "4096 SHA256:FM12dOB3ZeHcPAHQv2ChnzUkVmCYzj9KLvKnJXTedzk ansible-generated on jccsutils.net (RSA)",
+    "ssh_key_file": "/home/jucot/.ssh/id_rsa",
+    "ssh_public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC9ZjOGk7cnTv9o+XGHBuFU3dpi3OwLfIEWOJW/AorsZ86CfJEOewCFRZBq34lnfkrFWoTlVuwchJ/qEgdFj7twaMpqCYrV9KbuqJf36cGgjgZVsZlJonSxv7AgXqNFfWEjeF2qjSOGRaMvt6ImAa/CeEtXrKjQkeps8bSP0CXj48q6AirhppPmNa/YO0lOeVLMZgEdm5iPFPXglsM6gCKbv/c0Aa1NnufHfEalJnUUFcD5l9YHdZ84/SNGu+hybZ3iprJgRPhMuBrI3yvXBF51Ll93D4LEe5ItPiNvXheq2PyhWM01XW9dSxYgVjKnbGZ3OzzY/djM6vTwIkVUMbV4eGLGRyw2tfdL9zS0rBTOR1WgIxwIbLLkM9j1WtuUrrYW5JdfEBlPyPraeSR24zCusf+DmH3Zho30uejWlXejP2Re9kjJjl8s6WwmMYUeJn0mAQj06hUlctNvjTCni1IEMoMT/67nLt75XA7AHlMgtDoZ7Btk2N1SDO0tSzatPJ7ciW6uC7zb6f5lGj6RTxuoaEROPoBmPVqD0MmfoUmHBqKe1nmLHqKV9g+IS8wOkoUQ33O/vktbRHOO9Nypj1ZApw3fy2XeGzNscNS4xjNNqbmiBaxtrXgBQgTeM5DI9iLBkkbdaWKSjyDzgw7Ci1P5iC9kalh76bTyKokBbMr+hw== ansible-generated on jccsutils.net",
+    "state": "present",
+    "system": false,
+    "uid": 1000
+}
+Read vars_file 'group_vars/linode/vars'
+META: role_complete for localhost
+Read vars_file 'group_vars/linode/vars'
+
+TASK [create_dns_record : get host default IPv4 address] ***********************
+task path: /tmp/marketplace-apps/apps/linode_helpers/roles/create_dns_record/tasks/main.yml:5
+ok: [localhost] => {
+    "msg": "172.232.186.227"
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [create_dns_record : print ip address] ************************************
+task path: /tmp/marketplace-apps/apps/linode_helpers/roles/create_dns_record/tasks/main.yml:10
+ok: [localhost] => {
+    "ip_address": {
+        "changed": false,
+        "failed": false,
+        "msg": "172.232.186.227"
+    }
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [create_dns_record : lookup domain info] **********************************
+task path: /tmp/marketplace-apps/apps/linode_helpers/roles/create_dns_record/tasks/main.yml:17
+<127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+<127.0.0.1> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1695322138.9578745-2865-59510856301144 `" && echo ansible-tmp-1695322138.9578745-2865-59510856301144="` echo /root/.ansible/tmp/ansible-tmp-1695322138.9578745-2865-59510856301144 `" ) && sleep 0'
+Using module file /root/.ansible/collections/ansible_collections/linode/cloud/plugins/modules/domain_info.py
+<127.0.0.1> PUT /root/.ansible/tmp/ansible-local-26855tmt64rq/tmp09t55jmp TO /root/.ansible/tmp/ansible-tmp-1695322138.9578745-2865-59510856301144/AnsiballZ_domain_info.py
+<127.0.0.1> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1695322138.9578745-2865-59510856301144/ /root/.ansible/tmp/ansible-tmp-1695322138.9578745-2865-59510856301144/AnsiballZ_domain_info.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '/tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/bin/python /root/.ansible/tmp/ansible-tmp-1695322138.9578745-2865-59510856301144/AnsiballZ_domain_info.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1695322138.9578745-2865-59510856301144/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "domain": {
+        "axfr_ips": [],
+        "created": "2023-09-19T16:35:14",
+        "description": "",
+        "domain": "jccsutils.net",
+        "errors": "",
+        "expire_sec": 0,
+        "group": "",
+        "id": 2827698,
+        "master_ips": [],
+        "refresh_sec": 0,
+        "retry_sec": 0,
+        "soa_email": "jucot@akamai.com",
+        "status": "active",
+        "tags": [],
+        "ttl_sec": 0,
+        "type": "master",
+        "updated": "2023-09-20T21:18:28"
+    },
+    "invocation": {
+        "module_args": {
+            "api_token": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "api_version": "v4",
+            "domain": "jccsutils.net",
+            "id": null,
+            "label": null,
+            "state": null,
+            "tags": null,
+            "ua_prefix": null
+        }
+    },
+    "records": [
+        {
+            "created": "2023-09-19T16:35:19",
+            "id": 30967305,
+            "name": "",
+            "port": 0,
+            "priority": 0,
+            "protocol": null,
+            "service": null,
+            "tag": null,
+            "target": "172.232.185.23",
+            "ttl_sec": 30,
+            "type": "A",
+            "updated": "2023-09-19T16:35:19",
+            "weight": 0
+        },
+        {
+            "created": "2023-09-19T16:56:32",
+            "id": 30967566,
+            "name": "",
+            "port": 0,
+            "priority": 0,
+            "protocol": null,
+            "service": null,
+            "tag": null,
+            "target": "172.232.185.53",
+            "ttl_sec": 30,
+            "type": "A",
+            "updated": "2023-09-19T16:56:32",
+            "weight": 0
+        },
+        {
+            "created": "2023-09-20T21:18:27",
+            "id": 30990929,
+            "name": "",
+            "port": 0,
+            "priority": 0,
+            "protocol": null,
+            "service": null,
+            "tag": null,
+            "target": "172.232.170.149",
+            "ttl_sec": 30,
+            "type": "A",
+            "updated": "2023-09-20T21:18:27",
+            "weight": 0
+        },
+        {
+            "created": "2023-09-19T16:35:20",
+            "id": 30967306,
+            "name": "www",
+            "port": 0,
+            "priority": 0,
+            "protocol": null,
+            "service": null,
+            "tag": null,
+            "target": "172.232.185.23",
+            "ttl_sec": 30,
+            "type": "A",
+            "updated": "2023-09-19T16:35:20",
+            "weight": 0
+        },
+        {
+            "created": "2023-09-19T16:56:33",
+            "id": 30967567,
+            "name": "www",
+            "port": 0,
+            "priority": 0,
+            "protocol": null,
+            "service": null,
+            "tag": null,
+            "target": "172.232.185.53",
+            "ttl_sec": 30,
+            "type": "A",
+            "updated": "2023-09-19T16:56:33",
+            "weight": 0
+        },
+        {
+            "created": "2023-09-20T21:18:28",
+            "id": 30990931,
+            "name": "www",
+            "port": 0,
+            "priority": 0,
+            "protocol": null,
+            "service": null,
+            "tag": null,
+            "target": "172.232.170.149",
+            "ttl_sec": 30,
+            "type": "A",
+            "updated": "2023-09-20T21:18:28",
+            "weight": 0
+        }
+    ],
+    "zone_file": {
+        "zone_file": [
+            "; jccsutils.net [2827698]",
+            "$TTL 86400",
+            "@  IN  SOA  ns1.linode.com. jucot.akamai.com. 2021000003 14400 14400 1209600 86400",
+            "@    NS  ns1.linode.com.",
+            "@    NS  ns2.linode.com.",
+            "@    NS  ns3.linode.com.",
+            "@    NS  ns4.linode.com.",
+            "@    NS  ns5.linode.com.",
+            "@    30  A  172.232.185.23",
+            "@    30  A  172.232.185.53",
+            "@    30  A  172.232.170.149",
+            "www    30  A  172.232.185.23",
+            "www    30  A  172.232.185.53",
+            "www    30  A  172.232.170.149"
+        ]
+    }
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [create_dns_record : print domain info] ***********************************
+task path: /tmp/marketplace-apps/apps/linode_helpers/roles/create_dns_record/tasks/main.yml:23
+ok: [localhost] => {
+    "domain_output.zone_file.zone_file.0": "; jccsutils.net [2827698]"
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [create_dns_record : check domain existence] ******************************
+task path: /tmp/marketplace-apps/apps/linode_helpers/roles/create_dns_record/tasks/main.yml:27
+ok: [localhost] => {
+    "msg": "domain zone already exists"
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [create_dns_record : create a dns zone] ***********************************
+task path: /tmp/marketplace-apps/apps/linode_helpers/roles/create_dns_record/tasks/main.yml:37
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [create_dns_record : create A record for domain] **************************
+task path: /tmp/marketplace-apps/apps/linode_helpers/roles/create_dns_record/tasks/main.yml:48
+<127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+<127.0.0.1> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1695322140.0110989-2897-74995289543370 `" && echo ansible-tmp-1695322140.0110989-2897-74995289543370="` echo /root/.ansible/tmp/ansible-tmp-1695322140.0110989-2897-74995289543370 `" ) && sleep 0'
+Using module file /root/.ansible/collections/ansible_collections/linode/cloud/plugins/modules/domain_record.py
+<127.0.0.1> PUT /root/.ansible/tmp/ansible-local-26855tmt64rq/tmplcuypa4s TO /root/.ansible/tmp/ansible-tmp-1695322140.0110989-2897-74995289543370/AnsiballZ_domain_record.py
+<127.0.0.1> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1695322140.0110989-2897-74995289543370/ /root/.ansible/tmp/ansible-tmp-1695322140.0110989-2897-74995289543370/AnsiballZ_domain_record.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '/tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/bin/python /root/.ansible/tmp/ansible-tmp-1695322140.0110989-2897-74995289543370/AnsiballZ_domain_record.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1695322140.0110989-2897-74995289543370/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "actions": [
+        "Created domain record jccsutils.net"
+    ],
+    "changed": true,
+    "invocation": {
+        "module_args": {
+            "api_token": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "api_version": "v4",
+            "domain": "jccsutils.net",
+            "domain_id": null,
+            "label": null,
+            "name": "jccsutils.net",
+            "port": null,
+            "priority": null,
+            "protocol": null,
+            "record_id": null,
+            "service": null,
+            "state": "present",
+            "tag": null,
+            "tags": null,
+            "target": "172.232.186.227",
+            "ttl_sec": 30,
+            "ua_prefix": null,
+            "weight": null
+        }
+    },
+    "record": {
+        "created": "2023-09-21T18:49:01",
+        "id": 31010522,
+        "name": "",
+        "port": 0,
+        "priority": 0,
+        "protocol": null,
+        "service": null,
+        "tag": null,
+        "target": "172.232.186.227",
+        "ttl_sec": 30,
+        "type": "A",
+        "updated": "2023-09-21T18:49:01",
+        "weight": 0
+    }
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [create_dns_record : create A record for subdomain] ***********************
+task path: /tmp/marketplace-apps/apps/linode_helpers/roles/create_dns_record/tasks/main.yml:61
+<127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+<127.0.0.1> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1695322141.2381096-2980-63459408599937 `" && echo ansible-tmp-1695322141.2381096-2980-63459408599937="` echo /root/.ansible/tmp/ansible-tmp-1695322141.2381096-2980-63459408599937 `" ) && sleep 0'
+Using module file /root/.ansible/collections/ansible_collections/linode/cloud/plugins/modules/domain_record.py
+<127.0.0.1> PUT /root/.ansible/tmp/ansible-local-26855tmt64rq/tmplqz34kwv TO /root/.ansible/tmp/ansible-tmp-1695322141.2381096-2980-63459408599937/AnsiballZ_domain_record.py
+<127.0.0.1> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1695322141.2381096-2980-63459408599937/ /root/.ansible/tmp/ansible-tmp-1695322141.2381096-2980-63459408599937/AnsiballZ_domain_record.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '/tmp/marketplace-apps/apps/linode-marketplace-wordpress/env/bin/python /root/.ansible/tmp/ansible-tmp-1695322141.2381096-2980-63459408599937/AnsiballZ_domain_record.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1695322141.2381096-2980-63459408599937/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "actions": [
+        "Created domain record www"
+    ],
+    "changed": true,
+    "invocation": {
+        "module_args": {
+            "api_token": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "api_version": "v4",
+            "domain": "jccsutils.net",
+            "domain_id": null,
+            "label": null,
+            "name": "www",
+            "port": null,
+            "priority": null,
+            "protocol": null,
+            "record_id": null,
+            "service": null,
+            "state": "present",
+            "tag": null,
+            "tags": null,
+            "target": "172.232.186.227",
+            "ttl_sec": 30,
+            "ua_prefix": null,
+            "weight": null
+        }
+    },
+    "record": {
+        "created": "2023-09-21T18:49:02",
+        "id": 31010523,
+        "name": "www",
+        "port": 0,
+        "priority": 0,
+        "protocol": null,
+        "service": null,
+        "tag": null,
+        "target": "172.232.186.227",
+        "ttl_sec": 30,
+        "type": "A",
+        "updated": "2023-09-21T18:49:02",
+        "weight": 0
+    }
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [create_dns_record : wait for DNS propogation] ****************************
+task path: /tmp/marketplace-apps/apps/linode_helpers/roles/create_dns_record/tasks/main.yml:72
+Pausing for 180 seconds
+(ctrl+C then 'C' = continue early, ctrl+C then 'A' = abort)
+ok: [localhost] => {
+    "changed": false,
+    "delta": 180,
+    "echo": true,
+    "rc": 0,
+    "start": "2023-09-21 18:49:02.167771",
+    "stderr": "",
+    "stdout": "Paused for 3.0 minutes",
+    "stop": "2023-09-21 18:52:02.167893",
+    "user_input": ""
+}
+Read vars_file 'group_vars/linode/vars'
+
+TASK [create_dns_record : A record lookup for domain] **************************
+task path: /tmp/marketplace-apps/apps/linode_helpers/roles/create_dns_record/tasks/main.yml:77
+FAILED - RETRYING: [localhost]: A record lookup for domain (5 retries left).Result was: {
+    "attempts": 1,
+    "changed": false,
+    "msg": "",
+    "retries": 6
+}
+FAILED - RETRYING: [localhost]: A record lookup for domain (4 retries left).Result was: {
+    "attempts": 2,
+    "changed": false,
+    "msg": "",
+    "retries": 6
+}
+FAILED - RETRYING: [localhost]: A record lookup for domain (3 retries left).Result was: {
+    "attempts": 3,
+    "changed": false,
+    "msg": "",
+    "retries": 6
+}
+FAILED - RETRYING: [localhost]: A record lookup for domain (2 retries left).Result was: {
+    "attempts": 4,
+    "changed": false,
+    "msg": "",
+    "retries": 6
+}
+FAILED - RETRYING: [localhost]: A record lookup for domain (1 retries left).Result was: {
+    "attempts": 5,
+    "changed": false,
+    "msg": "",
+    "retries": 6
+}
+fatal: [localhost]: FAILED! => {
+    "msg": ""
+}
+
+NO MORE HOSTS LEFT *************************************************************
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=13   changed=5    unreachable=0    failed=1    skipped=3    rescued=0    ignored=0   
+

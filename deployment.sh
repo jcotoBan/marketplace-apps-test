@@ -2,7 +2,7 @@
 
 # git repo
 export GIT_REPO="https://github.com/jcotoBan/marketplace-apps-test.git"
-export WORK_DIR="/tmp/marketplace-apps-test" 
+export WORK_DIR="/tmp/marketplace-apps-test/pythonScript" 
 
 # install dependancies
 apt-get update
@@ -18,6 +18,6 @@ python3 -m virtualenv env
 source env/bin/activate
 pip install pip --upgrade
 pip install -r requirements.txt
-python3 ./pythonScript/main.py
+python3 main.py
 
 

@@ -270,7 +270,7 @@ def delete_key_cloudman(token,sshkey_id):
     response = requests.delete(url, auth=BearerAuth(token))
 
     if response.status_code == 200:
-        print("SSH key deleted successfully from cloud manager.")
+        print("SSH key successfully deleted from cloud manager.")
     else:
         print(f"Failed to delete SSH key. Status code: {response.status_code}")
         print(response.text)
@@ -281,12 +281,13 @@ def delete_instance(token, instance_id):
     response = requests.delete(url, auth=BearerAuth(token))
 
     if response.status_code == 200:
-        print(f"Linode {instance_id} deleted successfully from cloud manager.")
+        print(f"Linode {instance_id} successfully deleted  from cloud manager.")
     else:
         print(f"Failed to delete Linode. Status code: {response.status_code}")
         print(response.text)
 
 def delete_nomad_cluster_instance(token):
+
     linodes=''
     url = "https://api.linode.com/v4/linode/instances"
     response = requests.get(url, auth=BearerAuth(token))
@@ -301,3 +302,27 @@ def delete_nomad_cluster_instance(token):
 
     for obj in filtered_objects:
         delete_instance(token,obj['id'])
+
+def delete_custom_domain(token):
+
+    domains=''
+    urlget = "https://api.linode.com/v4/linode/instances"
+    response = requests.get(urlget, auth=BearerAuth(token))
+    
+    if response.status_code == 200:
+        domains=response.json()
+    else:
+        print(f"Failed to get domains. Status code: {response.status_code}")
+        print(response.json())
+
+    index = next((i for i, obj in enumerate(domains['data']) if obj['domain'] == "jccsutils.net"), None)
+
+    urldelete = f"https://api.linode.com/v4/domains/{domains['data'][index]['id']}"
+
+    response = requests.delete(urldelete, auth=BearerAuth(token))
+        
+    if response.status_code == 200:
+        print(f"Domain {instance_id} successfully deleted  from cloud manager.")
+    else:
+        print(f"Failed to delete Domain. Status code: {response.status_code}")
+        print(response.json())

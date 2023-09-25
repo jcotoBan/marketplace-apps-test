@@ -70,5 +70,5 @@ print(f"{mcolors.OKBLUE}Ansible Recaps{mcolors.ENDC}\n", end='')
 print_ansible_recap(host)
 print_ansible_errors(host)
 
-delete_key_cloudman(lapi, key_id)
 delete_nomad_cluster_instance(token)
+delete_key_cloudman(token, key_id)

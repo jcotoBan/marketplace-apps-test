@@ -217,7 +217,7 @@ def curl_nomad(token, region, email, root_pass, authorized_user):
             "clients": "3",
             "token_password": token,
             "sudo_username": "test_sudo",
-            "email_address": "email"
+            "email_address": email
         },
         "stackscript_id": 1226544,
         "tags": [],
@@ -326,3 +326,6 @@ def delete_custom_domain(token):
     else:
         print(f"Failed to delete Domain. Status code: {response.status_code}")
         print(response.json())
+
+
+

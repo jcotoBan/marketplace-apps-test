@@ -47,7 +47,7 @@ def ssh_validator(host):
     result = sock.connect_ex((host,22))
     while result != 0:
         result = sock.connect_ex((host,22))
-        time.sleep(10)
+        time.sleep(5)
 
     sock.close()
     spinner.stop()
@@ -135,8 +135,7 @@ def curl_wordpress_rdns_domain(token, region, email, root_pass, authorized_user)
             "site_title": "test_blog",
             "wp_admin_user": "admin",
             "wp_db_user": "admindb",
-            "wp_db_name": "dbwp",
-            "user_name": "jucot"
+            "wp_db_name": "dbwp"
         },
         "stackscript_id": 401697,
         "tags": [],
@@ -173,8 +172,6 @@ def curl_wordpress_custom_domain(token, region, email, root_pass, authorized_use
             "wp_admin_user": "admin",
             "wp_db_user": "admindb",
             "wp_db_name": "dbwp",
-            "user_name": "jucot",
-            "password": root_pass,
             "domain": "jccsutils.net", 
             "token_password": token,
             "subdomain": "www",
@@ -213,7 +210,6 @@ def curl_nomad(token, region, email, root_pass, authorized_user):
             "servers": "3",
             "clients": "3",
             "token_password": token,
-            "sudo_username": "test_sudo",
             "email_address": email
         },
         "stackscript_id": 1226544,

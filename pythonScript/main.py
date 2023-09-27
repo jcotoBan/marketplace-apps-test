@@ -43,6 +43,8 @@ print_ansible_errors(host)
 
 delete_instance(token,id)
 
+print('')
+
 #wordpress custom_domain
 
 print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Wordpress custom domain <<<<<<<<<<<<\n{mcolors.ENDC}", end='')
@@ -61,6 +63,8 @@ print_ansible_errors(host)
 
 delete_instance(token,id)
 
+print('')
+
 #nomad test
 
 print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Nomad custom domain <<<<<<<<<<<<\n{mcolors.ENDC}", end='')
@@ -75,6 +79,8 @@ ansible_process_validator(host)
 print(f"{mcolors.OKBLUE}Ansible Recaps{mcolors.ENDC}\n", end='')
 print_ansible_recap(host)
 print_ansible_errors(host)
+
+
 
 delete_nomad_cluster_instance(token)
 delete_key_cloudman(token, key_id)

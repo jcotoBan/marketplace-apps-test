@@ -62,10 +62,11 @@ def ansible_process_validator(host):
     client.set_missing_host_key_policy(MissingHostKeyPolicy())
     client.connect(host, port=ssh_port, username=ssh_user, key_filename=key)
     stdin, stdout, stderr = client.exec_command("pgrep -f ansible-playbook")
-
+    timeout=300
     spinner.start(text='Waiting ansible playbook to start')
-    while not stdout.readlines() :
+    while not stdout.readlines() and timeout > 0 :
         time.sleep(10) 
+        timeout -=10
         stdin, stdout, stderr = client.exec_command("pgrep -f ansible-playbook")
     spinner.stop()
     print(f"{mcolors.OKGREEN}ansible playbook started\n{mcolors.ENDC}", end='')
@@ -209,6 +210,7 @@ def curl_nomad(token, region, email, root_pass, authorized_user):
             "cluster_size": "6",
             "servers": "3",
             "clients": "3",
+            "sudo_username": "test_sudo",
             "token_password": token,
             "email_address": email
         },

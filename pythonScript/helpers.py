@@ -150,7 +150,7 @@ def curl_wordpress_rdns_domain(token, region, email, root_pass, authorized_user)
         return response
     else:
         print(f"{mcolors.FAIL}Failed to deploy instance. {response.json()} {mcolors.ENDC}")
-        sys.exit()
+        return response
 
 def curl_wordpress_custom_domain(token, region, email, root_pass, authorized_user):
    
@@ -189,7 +189,7 @@ def curl_wordpress_custom_domain(token, region, email, root_pass, authorized_use
         return response
     else:
         print(f"{mcolors.FAIL}Failed to deploy instance. {response.json()} {mcolors.ENDC}")
-        sys.exit()
+        return response
 
 def curl_nomad(token, region, email, root_pass, authorized_user):
    
@@ -226,7 +226,7 @@ def curl_nomad(token, region, email, root_pass, authorized_user):
         return response
     else:
         print(f"{mcolors.FAIL}Failed to deploy instance. {response.json()} {mcolors.ENDC}")
-        sys.exit()
+        return response
 
 def create_sshkeypair():
     key = RSA.generate(1024)

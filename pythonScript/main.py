@@ -32,7 +32,6 @@ print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Wordpress rdns domain <<<<<<<<<<<<\n{mcolor
 output=curl_wordpress_rdns_domain(token, region, email, root_pass, authorized_user)
 
 if output != 200:
-    print(f"{mcolors.FAIL}Failed to deploy instance. {output.json()} {mcolors.ENDC}")
     delete_custom_domain(token)
     delete_key_cloudman(token, key_id)
     sys.exit()
@@ -60,7 +59,6 @@ print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Wordpress custom domain <<<<<<<<<<<<\n{mcol
 output=curl_wordpress_custom_domain(token, region, email, root_pass, authorized_user)
 
 if output != 200:
-    print(f"{mcolors.FAIL}Failed to deploy instance. {output.json()} {mcolors.ENDC}")
     delete_custom_domain(token)
     delete_instance(token,wrnds_id)
     delete_key_cloudman(token, key_id)
@@ -89,7 +87,6 @@ output=curl_nomad(token, region, email, root_pass, authorized_user)
 
 
 if output != 200:
-    print(f"{mcolors.FAIL}Failed to deploy instance. {output.json()} {mcolors.ENDC}")
     delete_instance(token,wrnds_id)
     delete_instance(token,w_custom_id)
     delete_custom_domain(token)

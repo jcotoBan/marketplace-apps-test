@@ -136,9 +136,7 @@ def curl_wordpress_rdns_domain(token, region, email, root_pass, authorized_user)
             "wp_admin_user": "admin",
             "wp_db_user": "admindb",
             "wp_db_name": "dbwp",
-            "user_name": "jucot",
-            "password": root_pass,
-            "pubkey": ""
+            "user_name": "jucot"
         },
         "stackscript_id": 401697,
         "tags": [],
@@ -177,7 +175,6 @@ def curl_wordpress_custom_domain(token, region, email, root_pass, authorized_use
             "wp_db_name": "dbwp",
             "user_name": "jucot",
             "password": root_pass,
-            "pubkey": "",
             "domain": "jccsutils.net", 
             "token_password": token,
             "subdomain": "www",

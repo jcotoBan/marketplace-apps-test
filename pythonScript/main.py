@@ -18,7 +18,6 @@ authorized_user = input()
 
 root_pass="4dsf*asdf4as*"
 
-
 os.system('clear')
 
 #Creating and uploading temp key for testing

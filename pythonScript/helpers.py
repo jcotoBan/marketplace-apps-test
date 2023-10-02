@@ -173,7 +173,7 @@ def curl_wordpress_custom_domain(token, region, email, root_pass, authorized_use
             "wp_admin_user": "admin",
             "wp_db_user": "admindb",
             "wp_db_name": "dbwp",
-            "domain": "jccsutils.net", 
+            "domain": "linodemarketplace.xyz", 
             "token_password": token,
             "subdomain": "www",
         },
@@ -310,7 +310,7 @@ def delete_custom_domain(token):
         print(f"Failed to get domains. Status code: {response.status_code}")
         print(response.json())
 
-    index = next((i for i, obj in enumerate(domains['data']) if obj['domain'] == "jccsutils.net"), None)
+    index = next((i for i, obj in enumerate(domains['data']) if obj['domain'] == "linodemarketplace.xyz"), None)
 
     urldelete = f"https://api.linode.com/v4/domains/{domains['data'][index]['id']}"
 

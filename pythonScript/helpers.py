@@ -62,7 +62,7 @@ def ansible_process_validator(host):
     client.set_missing_host_key_policy(MissingHostKeyPolicy())
     client.connect(host, port=ssh_port, username=ssh_user, key_filename=key)
     stdin, stdout, stderr = client.exec_command("pgrep -f ansible-playbook")
-    timeout=300
+    timeout=150
     spinner.start(text='Waiting ansible playbook to start')
     while not stdout.readlines() and timeout > 0 :
         time.sleep(10) 
@@ -147,10 +147,10 @@ def curl_wordpress_rdns_domain(token, region, email, root_pass, authorized_user)
 
     if response.status_code == 200:
         print("Linode instance created successfully.\n\n")
-        return response
     else:
         print(f"{mcolors.FAIL}Failed to deploy instance. {response.json()} {mcolors.ENDC}")
-        return response
+
+    return response
 
 def curl_wordpress_custom_domain(token, region, email, root_pass, authorized_user):
    
@@ -175,7 +175,7 @@ def curl_wordpress_custom_domain(token, region, email, root_pass, authorized_use
             "wp_db_name": "dbwp",
             "domain": "linodemarketplace.xyz", 
             "token_password": token,
-            "subdomain": "www",
+            "subdomain": "deploytest",
         },
         "stackscript_id": 401697,
         "tags": [],
@@ -186,10 +186,10 @@ def curl_wordpress_custom_domain(token, region, email, root_pass, authorized_use
 
     if response.status_code == 200:
         print("Linode instance created successfully.\n\n")
-        return response
     else:
         print(f"{mcolors.FAIL}Failed to deploy instance. {response.json()} {mcolors.ENDC}")
-        return response
+    
+    return response
 
 def curl_nomad(token, region, email, root_pass, authorized_user):
    
@@ -223,10 +223,10 @@ def curl_nomad(token, region, email, root_pass, authorized_user):
 
     if response.status_code == 200:
         print("Linode instance created successfully.\n\n")
-        return response
     else:
         print(f"{mcolors.FAIL}Failed to deploy instance. {response.json()} {mcolors.ENDC}")
-        return response
+    
+    return response
 
 def create_sshkeypair():
     key = RSA.generate(1024)

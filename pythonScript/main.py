@@ -24,84 +24,49 @@ os.system('clear')
 
 key_id=create_key_cloudman(token, create_sshkeypair()).json().get('id', None)
 
-#wordpress rnds_domain
+print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Launching Test Deploys <<<<<<<<<<<<\n{mcolors.ENDC}", end='')
 
-print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Wordpress rdns domain <<<<<<<<<<<<\n{mcolors.ENDC}", end='')
+output_wrdns=curl_wordpress_rdns_domain(token, region, email, root_pass, authorized_user)
+output_wcustom=curl_wordpress_custom_domain(token, region, email, root_pass, authorized_user)
+output_nomad=curl_nomad(token, region, email, root_pass, authorized_user)
 
-output=curl_wordpress_rdns_domain(token, region, email, root_pass, authorized_user)
+wrnds_host = output_wrdns.json().get('ipv4', [])[0]
+wrnds_id = output_wrdns.json().get('id', None)
 
-if output.status_code != 200:
-    delete_key_cloudman(token, key_id)
-    sys.exit()
+wcustom_host = output_wcustom.json().get('ipv4', [])[0]
+wcustom_id = output_wcustom.json().get('id', None)
 
-wrnds_host = output.json().get('ipv4', [])[0]
-wrnds_id = output.json().get('id', None)
+nomad_host = output_nomad.json().get('ipv4', [])[0]
+nomad_id = output_nomad.json().get('id', None)
 
 
 print(f"{mcolors.OKBLUE}Ansible Playbook Verification\n{mcolors.ENDC}", end='')
 ssh_validator(wrnds_host)
-ansible_process_validator(wrnds_host)
+ssh_validator(wcustom_host)
+ssh_validator(nomad_host)
 
+ansible_process_validator(wrnds_host)
 print(f"{mcolors.OKBLUE}Ansible Recaps{mcolors.ENDC}\n", end='')
+print(f"{mcolors.OKBLUE}Wordpress default domain: {mcolors.ENDC}\n", end='')
 print_ansible_recap(wrnds_host)
 print_ansible_errors(wrnds_host)
 
-delete_instance(token,wrnds_id)
+ansible_process_validator(wcustom_host)
+print(f"{mcolors.OKBLUE}Wordpress custom domain: {mcolors.ENDC}\n", end='')
+print_ansible_recap(wcustom_host)
+print_ansible_errors(wcustom_host)
 
-print('')
-
-#wordpress custom_domain
-
-print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Wordpress custom domain <<<<<<<<<<<<\n{mcolors.ENDC}", end='')
-
-output=curl_wordpress_custom_domain(token, region, email, root_pass, authorized_user)
-
-if output.status_code != 200:
-    delete_instance(token,wrnds_id)
-    delete_key_cloudman(token, key_id)
-    sys.exit()
-
-w_custom_host = output.json().get('ipv4', [])[0]
-w_custom_id = output.json().get('id', None)
-
-print(f"{mcolors.OKBLUE}Ansible Playbook Verification\n{mcolors.ENDC}", end='')
-ssh_validator(w_custom_host)
-ansible_process_validator(w_custom_host)
-
-print(f"{mcolors.OKBLUE}Ansible Recaps{mcolors.ENDC}\n", end='')
-print_ansible_recap(w_custom_host)
-print_ansible_errors(w_custom_host)
-
-delete_instance(token,w_custom_id)
-
-print('')
-
-#nomad test
-
-print(f"{mcolors.OKBLUE}>>>>>>>>>>>> Nomad custom domain <<<<<<<<<<<<\n{mcolors.ENDC}", end='')
-
-output=curl_nomad(token, region, email, root_pass, authorized_user)
-
-
-if output.status_code != 200:
-    delete_instance(token,wrnds_id)
-    delete_instance(token,w_custom_id)
-    delete_custom_domain(token)
-    delete_key_cloudman(token, key_id)
-    sys.exit()
-
-
-nomad_host = output.json().get('ipv4', [])[0]
-
-print(f"{mcolors.OKBLUE}Ansible Playbook Verification\n{mcolors.ENDC}", end='')
-ssh_validator(nomad_host)
 ansible_process_validator(nomad_host)
-
-print(f"{mcolors.OKBLUE}Ansible Recaps{mcolors.ENDC}\n", end='')
+print(f"{mcolors.OKBLUE}Nomad cluster default domain: {mcolors.ENDC}\n", end='')
 print_ansible_recap(nomad_host)
 print_ansible_errors(nomad_host)
 
 
+print('')
+
+delete_instance(token, wrnds_id)
+delete_instance(token, wcustom_id)
+delete_instance(token, nomad_id)
 delete_nomad_cluster_instance(token)
 delete_key_cloudman(token, key_id)
 delete_custom_domain(token)
